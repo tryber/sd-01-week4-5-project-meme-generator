@@ -8,6 +8,12 @@
     height: auto;
 }
 
+#cabecalhomaior{
+    font-size: 50px;
+}
+#cabecalhomenor{
+    font-size: 23px;
+}
 .imgdisplay{
 width: 500px;
 height: 500px;
