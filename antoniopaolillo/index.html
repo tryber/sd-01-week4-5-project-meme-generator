@@ -9,32 +9,34 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="layout.css">
-    
+
 </head>
 
 <body>
-    
-    <main class="testando">
+
+    <main class="container">
         <!-- classe dos inputs -->
         <div class="textos">
             <span class="inputtexto">Digite o texto que ficara na parte superior:</span>
-            <input type="text" id="textocima" maxlength="25"><br>
-            
+            <input type="text" id="textocima" maxlength="49"><br>
+
             <span class="inputtexto">Digite o texto que ficara na parte inferior:</span>
-            <input type="text" id="textobaixo" maxlength="25">
+            <input type="text" id="textobaixo" maxlength="49">
+            <!-- buscando o img -->
+            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+            </p>
         </div>
 
-        <!-- buscando o img -->
-        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
-        </p>
-        
+
+        <!-- meme editor -->
         <div class="editconteiner" id="editconteiner">
-            <p><img id="output" class="imgdisplay" /></p>
-            <p id="teste"></p>
+            <img id="output" class="imgdisplay" />
+            <p id="textofinalcima" class="fonteimg"></p>
+            <p id="textofinalbaixo" class="fonteimg"></p>
         </div>
-        
+
     </main>
-    
+
     <script src="jsindex.js"></script>
 </body>
 

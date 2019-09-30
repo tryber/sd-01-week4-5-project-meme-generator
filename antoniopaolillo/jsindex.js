@@ -1,9 +1,15 @@
-var edicao = document.getElementById("teste"); //p final
-var txtcima = document.getElementById("textocima"); //txt de cima
-var textobaixo = document.getElementById("textobaixo");
+var finalcima = document.getElementById("textofinalcima"); //p final
+var finalbaixo = document.getElementById("textofinalbaixo"); //p final
+
+var txtcima = document.getElementById("textocima"); //txt de cima inicial
+var txtbaixo = document.getElementById("textobaixo"); //txt baixo inicial
 
 txtcima.addEventListener('keyup', function(){
-    edicao.innerHTML = txtcima.value;
+    finalcima.innerHTML = txtcima.value;
+})
+
+txtbaixo.addEventListener('keyup', function(){
+    finalbaixo.innerHTML = txtbaixo.value;
 })
 
 function loadFile(event) {
