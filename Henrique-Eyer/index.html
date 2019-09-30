@@ -1,0 +1,40 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <div class="content">
+            <!--Form para enviar a imagem desejada-->
+            <form id='formulario'>
+                <!--Campo para o usuario pegar a imagem-->
+                <label class="texto-informativo" for="imagem">Select a picture:
+                    <input type="file" id="imagem" name="Imagem" accept="image/png, image/jpeg">
+                </label>
+            </form>
+            <!--Campo para o usuario Digitar o texto do MEME-->
+            <label for="texto-meme" class="texto-informativo">Meme text:
+                <input type="text" name="" id="texto-meme">
+            </label>
+            <br>
+            <!--Div onde aparece a imagem-->
+            <div class="div-imagem">
+                <img id="imagemMeme" alt="" class="img-meme">
+                <div class="textodigitado">
+                    <p class="txt-meme" id="txt-meme">
+                            asdasdsadsdssd
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
