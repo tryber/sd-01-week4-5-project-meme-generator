@@ -1,8 +1,16 @@
 body{
     font-family: 'Lato', sans-serif;
-    
 }
 
-.title {
+span{
     text-align: center;
+}
+
+.align1stdiv{
+    text-align: center;
+    font-size: 130%;
+}
+
+.div2ndSep{
+    float: left;
 }
