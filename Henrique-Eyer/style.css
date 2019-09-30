@@ -8,24 +8,49 @@
     margin: 0;
 }
 
+.main-container{
+    padding: 20px;
+}
+
+
+.ipttxt{
+    margin: 5px;
+}
+
 .div-imagem{
     width: 506px;
     height: 606px;
     border: 3px black solid;
     position: relative;
+    margin-top: 20px;
     
+}
+
+.div-imagem img,p{
+    position: absolute;
 }
 
 img{
     width:500px;
     height:600px;
-    position: absolute;
-    z-index: -1;
 }
 
 p{  
-    padding: 50px;
-    color: aliceblue;
-    position: absolute;
+    padding: 10;
+    margin-left: 20px;
+    color:yellow;
+    font-size: 40px;
+    text-transform: uppercase;
+    word-break: break-all;
+   
+    
 }
+#txt-memec{
+    top:0;
+}
+
+#txt-memeb{
+    bottom:0;
+}
+
 

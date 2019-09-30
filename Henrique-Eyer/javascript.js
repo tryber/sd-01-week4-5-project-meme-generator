@@ -1,22 +1,29 @@
 
 var img=document.getElementById('imagem');
-var texto=document.getElementById('texto-meme');
+var inputtextoc=document.getElementById('texto-memec');//inputtexto
+var inputtextob=document.getElementById('texto-memeb');//inputtexto
 var divImg=document.getElementById('imagemMeme');
 var dados=document.getElementById('formulario');
-var txtmeme=document.getElementById('txt-meme');
+var ptxtc=document.getElementById('txt-memec');//pc
+var ptxtb=document.getElementById('txt-memeb');//pb
 
 
 img.addEventListener('change', function (){
     loadFile(event);
 })
 
-texto.addEventListener('keyup', function (){
+inputtextoc.addEventListener('keyup', function (){
     
-    txtmeme.innerHTML=texto.value;
+    ptxtc.innerHTML=inputtextoc.value;
+    
+})
+inputtextob.addEventListener('keyup', function (){
+    
+    ptxtb.innerHTML=inputtextob.value;
     
 })
 
-var loadFile = function(event) {
 
+var loadFile = function(event) {
 	divImg.src = URL.createObjectURL(event.target.files[0]);
 };
