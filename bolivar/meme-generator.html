@@ -8,13 +8,14 @@
     <body>
         <!-- Create a Canvas -->
         <!-- A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content. -->
-        <canvas id="canvas" width="1024" height="1024"></canvas>
-        <!-- Image Input -->
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <!-- Image Input on Canvas -->
         <!-- origin: Web content's origin is defined by the scheme (protocol), host (domain), and port of the URL used to access it  -->
         <!-- CORS: tell browsers to give a web application running at one origin, access to selected resources from a different origin. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin (domain, protocol, or port) from its own. -->
         <!-- crossOrigin: configure the CORS requests for the element's fetched data.  -->
         <!-- Anonymous: CORS requests for this element will have the credentials flag set to 'same-origin'. There will be no exchange of user credentials via cookies, client-side SSL certificates or HTTP authentication as described in the Terminology section of the CORS specification, unless it is in the same origin -->
         <img crossOrigin="Anonymous" id="meme-image" src=""/>
+        
     </body>
     <script src="meme-generator.js"></script>
 </html>
