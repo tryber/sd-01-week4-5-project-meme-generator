@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gerador de Memes - GM</title>
+<script language="javascript" type="text/javascript">
+
+	function loadFile(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+function myFunctionCima(frasecima) {
+  	var txtcima = document.getElementById("textocima")
+	txtcima.innerHTML = frasecima.value;
+  	console.log(texto);
+}
+
+function myFunction(frase) {
+  	var txt = document.getElementById("texto")
+	txt.innerHTML = frase.value;
+  	console.log(texto);
+}
+</script>
+</head>
+
+<body>
+	<h2>Gerador de Memes BRABO</h2>
+	<div>
+	<span>Selecione uma imagem de fundo para seu meme: </span><input type="file" name="image" id="diretorio" onchange="loadFile(event)" />
+	</div>
+	<span>Digite aqui uma frase para parte de <strong>cima</strong> do seu meme: </span><input type="text" id="frasecima" maxlength="55" onkeyup="myFunctionCima(frasecima)"><br>
+	<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text" id="frase" maxlength="55" onkeyup="myFunction(frase)"><br>
+	<div class="img">
+		<img id="output" alt="Gerador de Memes" />
+		<p id="textocima" class="fonte"></p>
+		<p id="texto" class="fonte"></p>
+	</div>
+</body>
+</html>
