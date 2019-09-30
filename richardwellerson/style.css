@@ -13,4 +13,24 @@ span{
 
 .div2ndSep{
     float: left;
+    position: absolute;
 }
+.button {
+    background-color: #6BFF0D;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: green;
+  }
+  
+  .chartextmeme{
+      resize: none;
+      outline: none;
+      white-space: nowrap;
+  }
