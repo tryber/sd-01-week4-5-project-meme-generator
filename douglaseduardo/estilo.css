@@ -3,6 +3,13 @@ body {
     background-color: #cccccc;
 }
 
+.menu {
+    border-radius: 4px;
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 500px;
+}
+
 img {
     border: 1px solid rgb(224, 15, 15);
     border-radius: 4px;
@@ -22,4 +29,18 @@ h2 {
     top: 2px;
     left: 40px;
     border-bottom-width: 20px;
+}
+
+ul.miniaturas {
+    position: relative;
+    width: 150px;
+}
+
+div.fotoprincipal {
+    position: absolute;
+    width: 60%x;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    float: left;
 }
