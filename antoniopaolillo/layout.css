@@ -5,7 +5,7 @@
 
 .container{
     width: auto;
-    height: auto
+    height: auto;
 }
 
 .imgdisplay{
@@ -22,14 +22,10 @@ position: absolute;
 position: relative;
 width: 500px;
 height: 500px;
-
 }
 
-
-
  #textofinalcima{
-
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Passion One', cursive;
      font-size: 32px;
      color: white;
      position: absolute;
@@ -37,12 +33,11 @@ height: 500px;
      padding: 10;
      text-transform: uppercase;
      margin-left: 25px;
-
  }
  
  #textofinalbaixo{
 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Passion One', cursive;
      font-size: 32px;
      color: white;
      position: absolute;
