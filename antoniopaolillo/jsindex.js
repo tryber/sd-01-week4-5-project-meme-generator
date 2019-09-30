@@ -1,4 +1,10 @@
+var edicao = document.getElementById("teste"); //p final
+var txtcima = document.getElementById("textocima"); //txt de cima
+var textobaixo = document.getElementById("textobaixo");
 
+txtcima.addEventListener('keyup', function(){
+    edicao.innerHTML = txtcima.value;
+})
 
 function loadFile(event) {
 	var image = document.getElementById('output');

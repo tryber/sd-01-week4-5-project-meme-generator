@@ -9,28 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="layout.css">
-    <script src="jsindex.js"></script>
-
+    
 </head>
 
 <body>
-
+    
     <main class="testando">
-        <!-- <p><label class="botao" for="file" style="cursor: pointer;">CARREGAR IMAGEM</label></p> -->
+        <!-- classe dos inputs -->
         <div class="textos">
             <span class="inputtexto">Digite o texto que ficara na parte superior:</span>
             <input type="text" id="textocima" maxlength="25"><br>
-
+            
             <span class="inputtexto">Digite o texto que ficara na parte inferior:</span>
             <input type="text" id="textobaixo" maxlength="25">
         </div>
+
+        <!-- buscando o img -->
         <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
         </p>
-        <div class="editconteiner">
+        
+        <div class="editconteiner" id="editconteiner">
             <p><img id="output" class="imgdisplay" /></p>
+            <p id="teste"></p>
         </div>
+        
     </main>
-
+    
+    <script src="jsindex.js"></script>
 </body>
 
 </html>
