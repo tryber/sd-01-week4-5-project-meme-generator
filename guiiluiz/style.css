@@ -13,6 +13,10 @@
     height: 400px;
 }
 
+#diretorio{
+    padding: 20px 0px 0px 0px;
+}
+
 #frase{
     margin: 0px 0px 10px 0px;
     text-align: center;
@@ -48,4 +52,15 @@
     color: white;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+#fonte1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+strong{
+    color: green;
 }
