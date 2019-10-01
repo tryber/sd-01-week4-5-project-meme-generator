@@ -20,17 +20,17 @@ let i;
 
 
 colecao[0].addEventListener('click', function (){
-        divImg.src=colecao[0].src;
-    })
-    colecao[1].addEventListener('click', function (){
-        divImg.src=colecao[1].src;
-    })
-    colecao[2].addEventListener('click', function (){
-        divImg.src=colecao[2].src;
-    })
-    colecao[3].addEventListener('click', function (){
-        divImg.src=colecao[4].src;
-    })
+    divImg.src=colecao[0].src;
+})
+colecao[1].addEventListener('click', function (){
+    divImg.src=colecao[1].src;
+})
+colecao[2].addEventListener('click', function (){
+    divImg.src=colecao[2].src;
+})
+colecao[3].addEventListener('click', function (){
+    divImg.src=colecao[3].src;
+})
 
 
 //funçoes para mudar o valor do font size dos textos da imagem
@@ -67,17 +67,17 @@ corInf.addEventListener('change', function(){
 
 //função para ativar o load file quando o usuario escolher a imagem
 img.addEventListener('change', function (){
-
+    
     loadFile(event);
-
+    
 })
 
 //função para adicionar o evento de keyup para parte de cima do texto 
 //função faz com que o paragrafo de dentro da imgem receba o texto digitado
 inputtextoc.addEventListener('keyup', function (){
-
+    
     ptxtc.innerHTML=inputtextoc.value;
-
+    
 })
 //função para adicionar o evento de keyup para parte de baixo do texto
 //função faz com que o paragrafo de dentro da imgem receba o texto digitado
@@ -89,5 +89,5 @@ inputtextob.addEventListener('keyup', function (){
 
 //variavel que recebe a função para carregar a imagem na div.
 var loadFile = function(event) {
-	divImg.src = URL.createObjectURL(event.target.files[0]);
+    divImg.src = URL.createObjectURL(event.target.files[0]);
 };
