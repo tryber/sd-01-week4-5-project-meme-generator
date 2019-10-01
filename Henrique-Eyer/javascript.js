@@ -13,6 +13,26 @@ var txtDown=document.getElementById('sizeletra-Down')//pega o elemnto botao para
 var corSup=document.getElementById('corSup');//Pegar o elemento input color superior
 var corInf=document.getElementById('corInf');//Pegar o elemento input color inferior
 
+var colecao=document.getElementsByClassName('memesimg');//pega todas as que possui os memes pre definidos.
+
+
+let i;
+
+
+colecao[0].addEventListener('click', function (){
+        divImg.src=colecao[0].src;
+    })
+    colecao[1].addEventListener('click', function (){
+        divImg.src=colecao[1].src;
+    })
+    colecao[2].addEventListener('click', function (){
+        divImg.src=colecao[2].src;
+    })
+    colecao[3].addEventListener('click', function (){
+        divImg.src=colecao[4].src;
+    })
+
+
 //funçoes para mudar o valor do font size dos textos da imagem
 txtUP.addEventListener('change', function (){
     if(txtUP.value> 45){
