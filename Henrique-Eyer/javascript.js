@@ -3,12 +3,15 @@ var img=document.getElementById('imagem');//Pegar imagem desejada
 var inputtextoc=document.getElementById('texto-memec');//inputtexto
 var inputtextob=document.getElementById('texto-memeb');//inputtexto
 var divImg=document.getElementById('imagemMeme');//Elemento onde a imagem fica
-var ptxtc=document.getElementById('txt-memec');//pc
-var ptxtb=document.getElementById('txt-memeb');//pb
+var ptxtc=document.getElementById('txt-memec');//paragrafo superio
+var ptxtb=document.getElementById('txt-memeb');//paragrafo inferior
 
 var txtUP=document.getElementById('sizeletra-Up')//pega o elemnto botao para aumentar a letra
 
 var txtDown=document.getElementById('sizeletra-Down')//pega o elemnto botao para aumentar a letra
+
+var corSup=document.getElementById('corSup');//Pegar o elemento input color superior
+var corInf=document.getElementById('corInf');//Pegar o elemento input color inferior
 
 //funçoes para mudar o valor do font size dos textos da imagem
 txtUP.addEventListener('change', function (){
@@ -29,6 +32,16 @@ txtDown.addEventListener('change', function (){
     }
     ptxtb.style.fontSize=txtDown.value;
 })
+//fim funçoes para mudar o tamanho
+
+//função para modificar as cores
+corSup.addEventListener('change', function(){
+    ptxtc.style.color=corSup.value;
+})
+corInf.addEventListener('change', function(){
+    ptxtb.style.color=corInf.value;
+})
+
 
 
 
