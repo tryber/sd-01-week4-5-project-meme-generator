@@ -21,21 +21,21 @@ function trocarFoto(parametro) {
 }
 //funções dos eventos
 // seção de mouser ouver
-foto1.addEventListener("mouseover", function() {
-    trocarFoto(foto_a)
-})
-foto2.addEventListener("mouseover", function() {
-    trocarFoto(foto_b)
-})
-foto3.addEventListener("mouseover", function() {
-    trocarFoto(foto_c)
-})
-foto4.addEventListener("mouseover", function() {
-    trocarFoto(foto_d)
-})
-foto5.addEventListener("mouseover", function() {
-    trocarFoto(foto_e)
-})
+// foto1.addEventListener("mouseover", function() {
+//     trocarFoto(foto_a)
+// })
+// foto2.addEventListener("mouseover", function() {
+//     trocarFoto(foto_b)
+// })
+// foto3.addEventListener("mouseover", function() {
+//     trocarFoto(foto_c)
+// })
+// foto4.addEventListener("mouseover", function() {
+//     trocarFoto(foto_d)
+// })
+// foto5.addEventListener("mouseover", function() {
+//     trocarFoto(foto_e)
+// })
 // seção de onclick
 foto1.addEventListener("click", function(){
     trocarFoto(foto_a)
