@@ -9,23 +9,45 @@
 <body>
     
     <div class="main-container">
+        <h1 class="tittle">Gerador de memes</h1>
+        
         <div class="content">
-            <!--Form para enviar a imagem desejada-->
-            <form id='formulario'>
-                <!--Campo para o usuario pegar a imagem-->
-                <label class="texto-informativo" for="imagem">Select a picture:
-                    <input type="file" id="imagem" name="Imagem" accept="image/png, image/jpeg">
+            
+            <div class="content-text">
+                <!--Form para enviar a imagem desejada-->
+                <form id='formulario'>
+                    <!--Campo para o usuario pegar a imagem-->
+                    <label class="texto-informativo" for="imagem">Select a picture:
+                        <input type="file" id="imagem" name="Imagem" accept="image/png, image/jpeg">
+                    </label>
+                </form>
+                <!--Campo para o usuario Digitar o texto do MEME-->
+                <label for="texto-meme" class="texto-informativo">Texto Superior:
+                    <input class="ipttxt" type="text" name="" id="texto-memec" maxlength="48">
                 </label>
-            </form>
-            <!--Campo para o usuario Digitar o texto do MEME-->
-            <label for="texto-meme" class="texto-informativo">Meme text cima:
-                <input class="ipttxt" type="text" name="" id="texto-memec" maxlength="48">
-            </label>
-            <br>
-            <label for="texto-meme2" class="texto-informativo">Meme text baixo:
+                <br>
+                <label for="texto-meme2" class="texto-informativo">Texto inferior:
                     <input class="ipttxt" type="text" name="" id="texto-memeb" maxlength="48">
-            </label>
-            <br>
+                </label>
+                <br>
+                <!--Aumentar a letra-->
+                <label for="sizeletra-Up">Size texto superio:
+                    <input type="number" min="10" max="45"value="" class="tamLetra" id="sizeletra-Up">
+                </label>
+                <br>
+                <label for="sizeletra-Down">Size texto inferior:
+                    <input type="number" min="10" max="45"value="" class="tamLetra" id="sizeletra-Down">
+                </label>
+                <br>
+                <label for="colorS">
+                    <input type="colorS" name="colorS" id="txtColor">Superior
+                </label>
+                <br>
+                <label for="colorS">
+                    <input type="colorS" name="colorS" id="txtColor">Superior
+                </label>>
+            </div>
+            
             <!--Div onde aparece a imagem-->
             <div class="div-imagem">
                 <img id="imagemMeme" alt="Imagem-meme" class="img-meme">
