@@ -32,14 +32,15 @@
     position: absolute;
     top: -25px;
     word-break: break-all;
-    z-index: 2;
+    z-index: 3;
 }
 
-#texto{
+#textobaixo{
     padding: 10px;
     position: absolute;
     bottom: 0;
     word-break: break-all;
+    z-index: 2;
 }
 
 @font-face {
