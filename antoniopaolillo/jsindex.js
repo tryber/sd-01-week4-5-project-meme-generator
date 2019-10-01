@@ -27,8 +27,34 @@ cor.addEventListener('change', function(){
     finalbaixo.style.color = cor.value;
 })
 
-var display = document.getElementsByClassName("imgdisplay")[0];
+var display = document.getElementById('output');
 var borda = document.getElementById("borda");
 borda.addEventListener('change', function(){
 display.style.background = borda.value;
 })
+
+//buscando imagens precarregadas e mostrando na tela
+var imgprincipal = document.getElementById('output');
+var im1 = document.getElementById('img1');
+var im2 = document.getElementById('img2');
+var im3 = document.getElementById('img3');
+var im4 = document.getElementById('img4');
+var im5 = document.getElementById('img5');
+
+im1.addEventListener('click', function(){
+    imgprincipal.src = im1.src;
+})
+im2.addEventListener('click', function(){
+    imgprincipal.src = im2.src;
+})
+im3.addEventListener('click', function(){
+    imgprincipal.src = im3.src;
+})
+im4.addEventListener('click', function(){
+    imgprincipal.src = im4.src;
+})
+im5.addEventListener('click', function(){
+    imgprincipal.src = im5.src;
+})
+
+
