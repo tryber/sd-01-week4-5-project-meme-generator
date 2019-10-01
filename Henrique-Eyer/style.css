@@ -47,7 +47,7 @@
     position: absolute;
 }
 
-img{
+#imagemMeme{
     width:500px;
     height:600px;
 }
@@ -71,4 +71,19 @@ p{
     bottom:0;
 }
 
+.colectionmemes{
+    display: flex;
+    flex-direction: row;
 
+    
+    flex-wrap: wrap;
+
+    width: 500px;
+    height: 400px
+}
+
+div img{
+    margin: 2px;
+    width: 200px;
+    height: 200px;
+}
