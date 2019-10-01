@@ -1,7 +1,3 @@
-@font-face {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    src: url('Impact.ttf');
- }
 
 .container{
     width: auto;
@@ -42,7 +38,6 @@ height: 500px;
  }
  
  #textofinalbaixo{
-
     font-family: 'Passion One', cursive;
      font-size: 32px;
      color: white;
