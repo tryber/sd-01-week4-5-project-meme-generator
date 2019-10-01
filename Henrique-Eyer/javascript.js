@@ -6,6 +6,7 @@ var divImg=document.getElementById('imagemMeme');//Elemento onde a imagem fica
 var ptxtc=document.getElementById('txt-memec');//paragrafo superio
 var ptxtb=document.getElementById('txt-memeb');//paragrafo inferior
 
+
 var txtUP=document.getElementById('sizeletra-Up')//pega o elemnto botao para aumentar a letra
 
 var txtDown=document.getElementById('sizeletra-Down')//pega o elemnto botao para aumentar a letra
@@ -15,10 +16,17 @@ var corInf=document.getElementById('corInf');//Pegar o elemento input color infe
 
 var colecao=document.getElementsByClassName('memesimg');//pega todas as que possui os memes pre definidos.
 
+var borda = document.getElementById("borda");
 
-let i;
+var bordadiv=document.querySelector('.div-imagem');
 
 
+borda.addEventListener('change', function(){
+    bordadiv.style.borderStyle=borda.value;
+})
+
+
+// Funçoes para mudar as imagem caso clique 
 colecao[0].addEventListener('click', function (){
     divImg.src=colecao[0].src;
 })
