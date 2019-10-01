@@ -16,25 +16,23 @@ body {
     overflow: auto;
 }
 
-.image-container {
+.imagem-container {
     position: absolute;
     width: 50%;
-    height: 80%;
+    min-height: 50%;
     margin-top: 65px;
     margin-bottom: 65px;
     left: 50%;
     transform: translate(-50%);
-
     right: auto;
-    padding: 1px;
+    padding: 0px;
     text-align: center;
     border: 3px solid red;
 }
 
-.imagem-meme {
-    
-    max-width: 100%;
-    max-height: inherit;
+.imagem-meme {    
+    width: 100%;
+    height: auto;
 }
 
 .newText{
@@ -47,5 +45,5 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     -webkit-text-stroke: 2px black;
-
+    object-fit: cover;
 }
