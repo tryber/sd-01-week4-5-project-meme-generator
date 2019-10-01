@@ -20,11 +20,48 @@ var borda = document.getElementById("borda");
 
 var bordadiv=document.querySelector('.div-imagem');
 
+var salvar=document.getElementById('salvar');
 
+var qtd=0;
+
+//função para salvar os memes já criados
+salvar.addEventListener('click', function(){
+
+    var pegamemepS=document.createElement("p");
+    pegamemepS.className="txt-meme c";
+    pegamemepS.id="txt-memec"+qtd;
+    pegamemepS.innerHTML=inputtextoc.value
+    pegamemepS.style.fontSize=txtUP.value*0.25;
+
+    var pegamemepI=document.createElement("p");
+    pegamemepI.className="txt-meme b";
+    pegamemepI.id="txt-memeb"+qtd;
+    pegamemepI.innerHTML=inputtextob.value
+    
+    pegamemepI.style.fontSize=txtDown*0.25;
+
+    var pegamemeimg=document.createElement("img");
+    pegamemeimg.src=divImg.src;
+
+    var pegameme=document.createElement("div");
+    pegameme.className="itemcolection";
+
+    
+    
+    
+    var divcollection=document.querySelector(".collection");
+    divcollection.appendChild(pegameme);
+    pegameme.appendChild(pegamemeimg);
+    pegameme.appendChild(pegamemepI);
+    pegameme.appendChild(pegamemepS);
+    qtd++;
+})
+
+
+//função para mudar a bordar
 borda.addEventListener('change', function(){
     bordadiv.style.borderStyle=borda.value;
 })
-
 
 // Funçoes para mudar as imagem caso clique 
 colecao[0].addEventListener('click', function (){
@@ -43,20 +80,20 @@ colecao[3].addEventListener('click', function (){
 
 //funçoes para mudar o valor do font size dos textos da imagem
 txtUP.addEventListener('change', function (){
-    if(txtUP.value> 45){
-        txtUP.value=45;
+    if(txtUP.value> 55){
+        txtUP.value=55;
     }
-    if(txtUP.value< 10){
-        txtUP.value=10;
+    if(txtUP.value< 15){
+        txtUP.value=15;
     }
     ptxtc.style.fontSize=txtUP.value;
 })
 txtDown.addEventListener('change', function (){
-    if(txtDown.value> 45){
-        txtDown.value=45;
+    if(txtDown.value> 55){
+        txtDown.value=55;
     }
-    if(txtDown.value< 10){
-        txtDown.value=10;
+    if(txtDown.value< 15){
+        txtDown.value=15;
     }
     ptxtb.style.fontSize=txtDown.value;
 })
