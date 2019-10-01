@@ -12,24 +12,20 @@
 </head>
 <body>
 
-    <div class="align1stdiv">
-        <span class="title1">Gerador de memes - O melhor da Internet</span><br>
-    </div>
-
-    <div class="div2ndSep">
-        <p>Selecione uma imagem: <button class="button" type="button">Clique Aqui</button></p>
-            <div class="inputalignleft">
-                <p>Texto Superior:</p>
-                <textarea maxlength="70" rows = "1" cols="70" class="chartextmeme" placeholder = "Mandavê!"></textarea>
-            </div>
-        <div class="inputalignright">
-            <p>Texto Inferior:</p>
-            <textarea maxlength="70" rows = "1" cols="70" class="chartextmeme" placeholder = "Mandavê, vai logo!"></textarea>
+    <div>
+        <div class="align1stdiv">
+            <span class="title1">Gerador de memes - O melhor da Internet</span><br>
+            <p>Selecione uma imagem:  <input type="file" name="image" id="diretorio" onchange="loadFile(event)" /></p>
+            <p>Texto Superior:  <input type="text" maxlength="70" id="chartextmemetop" placeholder = "Mandavê!" onkeyup="showTextTop(event)"/></p>
+            <p>Texto Inferior: <input type="text" maxlength="70" id="chartextmemebottom" placeholder = "Mandavê, vai logo!" onkeyup="showTextBottom(event)"/></p>
         </div>
+
+            <div class="box">
+                <img src="" id="output" alt="Imagem do meme">
+                    <p id="memetexttop"></p>
+                    <p id="memetextbottom"></p>
+            </div>
     </div>
 
-    <div class = "imgmeme">
-
-    </div>
 </body>
 </html>

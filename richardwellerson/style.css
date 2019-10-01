@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 span{
@@ -8,36 +9,44 @@ span{
 
 .align1stdiv{
     text-align: center;
-    font-size: 130%;
+    border: 1px solid black;
 }
 
 .div2ndSep{
-    
-}
-.button {
-    background-color: #6BFF0D;
-    border: none;
-    color: white;
-    padding: 15px 25px;
     text-align: center;
-    font-size: 16px;
-    cursor: pointer;
 }
   
-.button:hover {
-    background-color: green;
-}
-  
-.chartextmeme{
-    resize: none;
-    outline: none;
-    white-space: nowrap;
+
+.imgmeme {
+    border: 1px dashed black;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
 }
 
-.inputalignleft {
-    float: left;
+.box {
+    width: 500px;
+    height: 500px;
+    border: 2px dashed red;
 }
 
-.inputalignright {
-    float: right;
+#output{
+    width: 498px;
+    height: 498px;
+    z-index: 0;
+    position: -ms-page;
+}
+
+#memetexttop{
+    z-index: 1;
+    position: absolute;
+    word-break: break-all;
+}
+
+#memetextbottom{
+    z-index: 2;
+    bottom: 0%;
+    position: absolute;
+    word-break: break-all;
 }
