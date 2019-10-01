@@ -12,8 +12,7 @@ span{
 }
 
 .div2ndSep{
-    float: left;
-    position: absolute;
+    
 }
 .button {
     background-color: #6BFF0D;
@@ -23,14 +22,22 @@ span{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-  }
+}
   
-  .button:hover {
+.button:hover {
     background-color: green;
-  }
+}
   
-  .chartextmeme{
-      resize: none;
-      outline: none;
-      white-space: nowrap;
-  }
+.chartextmeme{
+    resize: none;
+    outline: none;
+    white-space: nowrap;
+}
+
+.inputalignleft {
+    float: left;
+}
+
+.inputalignright {
+    float: right;
+}
