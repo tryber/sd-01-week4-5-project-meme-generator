@@ -9,7 +9,9 @@
         <div class="center"> 
             <div class="menu-div"><h1>Seja bem-vindos e bem-vindas ao mais glorioso Meme Generator
                 da face da Terra! Criado aqui na Trybe!</h1>
-                <form>Insira o texto para seu meme: 
+                <form>Insira o texto SUPERIOR para seu meme: 
+                    <input class="frase-meme" type="text" name="meme"> <br> <br>
+                    Isira o texto INFERIOR para seu meme:
                     <input class="frase-meme" type="text" name="meme"> <br> <br>
                     Selecione a imagem desejada: <input class="imagem-upload" type="file" name="imagem" accept="image/png, image/jpeg">
                 </form>                
@@ -28,15 +30,22 @@
         img.src = URL.createObjectURL(this.files[0]);
     });
 
-    //função de inserir texto sobre imagem
+    //função de inserir texto SUPERIOR sobre imagem
     const texto = document.querySelector(".frase-meme")
     texto.addEventListener("keyup", function() {
-        var newText= document.createElement("span");
-        newText.className="newText"
+        let newText= document.createElement("span");
+        newText.className="text up"
         document.querySelector(".imagem-container").appendChild(newText);
-        document.querySelector(".newText").innerText=texto.value;
+        document.getElementsByClassName("text up")[0].innerText=texto.value;
     })
-   
+    //função de inserior texto INFERIOR na imagem
+    const texto2 = document.getElementsByClassName("frase-meme")[1];
+    texto2.addEventListener("keyup", function() {
+        let newText= document.createElement("span");
+        newText.className="text down"
+        document.querySelector(".imagem-container").appendChild(newText);
+        document.getElementsByClassName("text down")[0].innerText=texto2.value;
+    })
     </script>
 
 </body>
