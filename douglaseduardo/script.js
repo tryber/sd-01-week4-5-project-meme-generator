@@ -56,7 +56,7 @@ foto5.addEventListener("click", function(){
     trocarFoto(foto_e)
 })
 //seção para o texto
-textoDoForms.addEventListener("keyup", function{
+textoDoForms.addEventListener("keyup", function(){
     colocarTexto()
 })
 
