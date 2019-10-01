@@ -7,16 +7,16 @@
 <body>
    
         <div class="center"> 
-            <div class="menu-bar"><h1>Seja bem-vindos e bem-vindas ao mais glorioso Meme Generator
+            <div class="menu-div"><h1>Seja bem-vindos e bem-vindas ao mais glorioso Meme Generator
                 da face da Terra! Criado aqui na Trybe!</h1>
                 <form>Insira o texto para seu meme: 
-                    <input id="frase-meme" type="text" name="meme"> <br> <br>
+                    <input class="frase-meme" type="text" name="meme"> <br> <br>
                     Selecione a imagem desejada: <input class="imagem-upload" type="file" name="imagem" accept="image/png, image/jpeg">
-                </form>
-                
-            
+                </form>                
             </div>
-            <div class="image-container"><img class="imagem-meme" src="" /></div>
+            <div class="image-container">
+                <img class="imagem-meme" src="" />
+            </div>
         </div>
     
 
@@ -28,7 +28,14 @@
         img.src = URL.createObjectURL(this.files[0]);
     });
 
-
+    //função de inserir texto sobre imagem
+    const texto = document.querySelector(".frase-meme")
+    texto.addEventListener("keyup", function() {
+        var newText= document.createElement("span");
+        newText.className="newText"
+        document.querySelector(".image-container").appendChild(newText);
+        document.querySelector(".newText").innerText=texto.value;
+    })
    
     </script>
 
