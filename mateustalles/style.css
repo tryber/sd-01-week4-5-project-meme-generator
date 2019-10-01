@@ -33,17 +33,19 @@ body {
 .imagem-meme {    
     width: 100%;
     height: auto;
+
 }
 
 .newText{
     position:absolute;
+    display: inline;
     bottom: 0%;
     left: 0%;
-    border-right: auto;
-    width: 100%;
+    max-width: 100%;
     font-size: 42px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     -webkit-text-stroke: 2px black;
-    object-fit: cover;
+    word-break:break-all;
+  white-space:normal;
 }
