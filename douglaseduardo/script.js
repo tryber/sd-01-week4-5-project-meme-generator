@@ -9,11 +9,11 @@ let foto5 = document.querySelector("#foto5")
 let textoDoForms = document.querySelector("#texto")
 let textoDaTagP = document.querySelector("#texto_meme")
 //variaveis dos arquivos
-let foto_a = "imagens/desanimo.jpg"
-let foto_b = "imagens/mimimi.jpg"
-let foto_c = "imagens/pensando.jpg"
-let foto_d = "imagens/prantos.jpg"
-let foto_e = "imagens/engomadinho.jpg"
+let foto_a = "imagens/godplease.jpg"
+let foto_b = "imagens/jura.jpg"
+let foto_c = "imagens/kiko.jpg"
+let foto_d = "imagens/mudarseassunto.jpg"
+let foto_e = "imagens/rir.jpg"
 
 //funções de trocar as fotos
 function trocarFoto(parametro) {
