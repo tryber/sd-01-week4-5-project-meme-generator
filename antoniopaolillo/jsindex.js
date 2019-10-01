@@ -1,6 +1,5 @@
 var finalcima = document.getElementById("textofinalcima"); //p final
 var finalbaixo = document.getElementById("textofinalbaixo"); //p final
-
 var txtcima = document.getElementById("textocima"); //txt de cima inicial
 var txtbaixo = document.getElementById("textobaixo"); //txt baixo inicial
 
@@ -27,10 +26,11 @@ cor.addEventListener('change', function(){
     finalbaixo.style.color = cor.value;
 })
 
+//alterando a borda
 var display = document.getElementById('output');
 var borda = document.getElementById("borda");
 borda.addEventListener('change', function(){
-display.style.background = borda.value;
+display.style.borderWidth = borda.value;
 })
 
 //buscando imagens precarregadas e mostrando na tela
@@ -57,4 +57,8 @@ im5.addEventListener('click', function(){
     imgprincipal.src = im5.src;
 })
 
-
+//alterando o tamanho da fonte 
+var tam = document.getElementById("tamanho");
+tam.addEventListener('change', function(){
+    finalcima.style.fontSize = tam.value;
+})

@@ -24,44 +24,53 @@
 
         <!-- classe dos inputs -->
         <div class="textos">
+            <!-- buscando o img -->
+            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+            </p>
             <span class="inputtexto">Digite o texto que ficara na parte superior:</span>
-            <input type="text" id="textocima" maxlength="49"><br>
+            <input type="text" id="textocima" maxlength="50"><br>
 
             <span class="inputtexto">Digite o texto que ficara na parte inferior:</span>
-            <input type="text" id="textobaixo" maxlength="49"><br>
+            <input type="text" id="textobaixo" maxlength="50"><br>
+
+            <span class="inputtexto">Selecione o tamanho da fonte:</span>
+            <select id="tamanho" class = "options">
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+                <option value="28px">28px</option>
+                <option value="32px">32px</option>
+                <option value="36px">36px</option>
+            </select><br>
 
             <span class="inputtexto">Selecione a cor da fonte:</span>
-            <select id="color">
-                <option value="white">Branco</option>
+            <select id="color" class = "options">
                 <option value="black">Preto</option>
+                <option value="white">Branco</option>
                 <option value="red">Vermelho</option>
                 <option value="blue">Azul</option>
                 <option value="green">Verde</option>
             </select><br>
 
             <span class="inputtexto">Selecione a borda da imagem:</span>
-            <select id="borda">
-                <option value="5">Borda tradicional</option>
-                <option value="2">Borda fina</option>
-                <option value="15">Borda grossa</option>
+            <select id="borda" class = "options">
+                <option value="5px">Borda tradicional</option>
+                <option value="2px">Borda fina</option>
+                <option value="15px">Borda grossa</option>
             </select>
 
-            <!-- buscando o img -->
-            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
-            </p>
-        </div>
+        </div><br>
 
         <!-- resultado img + texto -->
         <div class="editconteiner" id="editconteiner">
-            <img id="output" class="imgdisplay"/>
+            <img id="output" class="imgdisplay" />
             <p id="textofinalcima" class="fonteimg"></p>
             <p id="textofinalbaixo" class="fonteimg"></p>
         </div>
 
         <!-- imagens pre-carregadas -->
-        <div class ="imgcarregadas"><br>
+        <div class="imgcarregadas"><br>
             <img src="imagem1.jpg" id="img1" alt="some text" width=99 height=99>
-            <img src="imagem2.jpg_large"id="img2" alt="some text" width=99 height=99>
+            <img src="imagem2.jpg_large" id="img2" alt="some text" width=99 height=99>
             <img src="imagem3.jpg" id="img3" alt="some text" width=99 height=99>
             <img src="imagem4.jpeg" id="img4" alt="some text" width=99 height=99>
             <img src="imagem5.jpg" id="img5" alt="some text" width=99 height=99>
