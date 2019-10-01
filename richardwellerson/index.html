@@ -11,21 +11,16 @@
     <title>Gerador de Memes =D </title>
 </head>
 <body>
+        <span class="title1">Gerador de memes - O melhor da Internet</span><br>
+        <p>Selecione uma imagem:  <input type="file" name="image" id="diretorio" onchange="loadFile(event)" /></p>
+        <p>Texto Superior: <input type="text" maxlength="70" id="chartextmemetop" placeholder = "Mandavê!" onkeyup="showTextTop(event)"/></p>
+        <p>Texto Inferior: <input type="text" maxlength="70" id="chartextmemebottom" placeholder = "Mandavê!" onkeyup="showTextBottom(event)"/></p>
 
-    <div>
-        <div class="align1stdiv">
-            <span class="title1">Gerador de memes - O melhor da Internet</span><br>
-            <p>Selecione uma imagem:  <input type="file" name="image" id="diretorio" onchange="loadFile(event)" /></p>
-            <p>Texto Superior:  <input type="text" maxlength="70" id="chartextmemetop" placeholder = "Mandavê!" onkeyup="showTextTop(event)"/></p>
-            <p>Texto Inferior: <input type="text" maxlength="70" id="chartextmemebottom" placeholder = "Mandavê, vai logo!" onkeyup="showTextBottom(event)"/></p>
+        <div class="box">
+            <img src="" id="imgoutput" alt="Imagem do meme">
+            <p id="memetexttop"></p>
+            <p id="memetextbottom"></p>
         </div>
-
-            <div class="box">
-                <img src="" id="output" alt="Imagem do meme">
-                    <p id="memetexttop"></p>
-                    <p id="memetextbottom"></p>
-            </div>
-    </div>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 function loadFile(event) {
-    let image = document.getElementById('output');
+    let image = document.getElementById('imgoutput');
     image.src = URL.createObjectURL(event.target.files[0]);
 };
 
