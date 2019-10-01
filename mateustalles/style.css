@@ -18,6 +18,7 @@ body {
 
 .imagem-container {
     position: absolute;
+    display: inline-flex;
     width: 50%;
     min-height: 50%;
     margin-top: 65px;
@@ -32,7 +33,7 @@ body {
 
 .imagem-meme {    
     width: 100%;
-    height: auto;
+    height: 100%;
 
 }
 
