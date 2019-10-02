@@ -46,7 +46,38 @@
         document.querySelector(".imagem-container").appendChild(newText);
         document.getElementsByClassName(positionClass)[0].innerText=texto.value;
     })
+    };
+
+    //Botão de aumentar e diminuir fonte.
+    let btnSize = document.querySelectorAll(".text-button");
+    for (let i = 0 ; i < btnSize.length ; i++) {
+    btnSize[i].addEventListener("click", function() {
+            if ( i== 0) {
+                let changeSizeUp = document.querySelector(".text.up");
+                let changeSizeDown = document.querySelector(".text.down");
+                    if (changeSizeUp.style.fontSize=="") {
+                        changeSizeUp.style.fontSize="53px";
+                        changeSizeDown.style.fontSize="53px";
+                    } else {
+                        changeSizeUp.style.fontSize=parseInt(changeSizeUp.style.fontSize) + 3 +"px";
+                        changeSizeDown.style.fontSize=parseInt(changeSizeDown.style.fontSize) + 3 +"px";
+                    }
+            }
+                
+             else if ( i == 1) {
+                let changeSizeUp = document.querySelector(".text.up");
+                let changeSizeDown = document.querySelector(".text.down");
+                    if (changeSizeUp.style.fontSize=="") {
+                        changeSizeUp.style.fontSize="47px";
+                        changeSizeDown.style.fontSize="47px";
+                    } else {
+                        changeSizeUp.style.fontSize=parseInt(changeSizeUp.style.fontSize) - 3 +"px";
+                        changeSizeDown.style.fontSize=parseInt(changeSizeDown.style.fontSize) - 3 +"px";
+                    }
+             }
+         });
     }
+
     //inserindo texto se referindo a classe e index do item input no documento.
     inserirTexto("text up",0);
     inserirTexto("text down",1)
