@@ -31,6 +31,7 @@ body {
     border: 3px solid red;
     resize: both;
     overflow: auto;
+    z-index: 5;
 }
 
 .imagem-meme {    
@@ -38,16 +39,25 @@ body {
 
 }
 
-.newText{
+.text {
     position:absolute;
     display: inline;
-    bottom: 0%;
-    left: 0%;
+    margin: 0px 5px;
     max-width: 100%;
-    font-size: 42px;
+    font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     -webkit-text-stroke: 2px black;
     word-break:break-all;
   white-space:normal;
 }
+.text.up{
+    top: 0%;
+    left: 0%;
+}
+
+.text.down {
+    bottom: 0%;
+    left: 0%;
+}
+

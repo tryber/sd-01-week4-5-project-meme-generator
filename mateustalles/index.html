@@ -30,22 +30,19 @@
         img.src = URL.createObjectURL(this.files[0]);
     });
 
-    //função de inserir texto SUPERIOR sobre imagem
-    const texto = document.querySelector(".frase-meme")
-    texto.addEventListener("keyup", function() {
+    //função de inserir texto
+    function inserirTexto(positionClass,index) {
+        let texto = document.getElementsByClassName("frase-meme")[index];
+            texto.addEventListener("keyup", function() {
         let newText= document.createElement("span");
-        newText.className="text up"
+        newText.className=positionClass;
         document.querySelector(".imagem-container").appendChild(newText);
-        document.getElementsByClassName("text up")[0].innerText=texto.value;
+        document.getElementsByClassName(positionClass)[0].innerText=texto.value;
     })
-    //função de inserior texto INFERIOR na imagem
-    const texto2 = document.getElementsByClassName("frase-meme")[1];
-    texto2.addEventListener("keyup", function() {
-        let newText= document.createElement("span");
-        newText.className="text down"
-        document.querySelector(".imagem-container").appendChild(newText);
-        document.getElementsByClassName("text down")[0].innerText=texto2.value;
-    })
+    }
+    //inserindo texto se referindo a classe e index do item input no documento.
+    inserirTexto("text up",0);
+    inserirTexto("text down",1)
     </script>
 
 </body>
