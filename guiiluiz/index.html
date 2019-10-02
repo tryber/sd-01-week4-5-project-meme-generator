@@ -5,66 +5,50 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Gerador de Memes - GM</title>
-	<script language="javascript" type="text/javascript">
-
-		function loadFile(event) {
-			var image = document.getElementById('output');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-
-		function textoCima(frasecima) {
-			var txtcima = document.getElementById("textocima")
-			txtcima.innerHTML = frasecima.value;
-		}
-
-		function textoBaixo(frase) {
-			var txtbaixo = document.getElementById("textobaixo")
-			txtbaixo.innerHTML = frase.value;
-		}
-
-		function aumentaLetra() {
-			var txtbaixo = document.getElementById("textobaixo")
-			txtbaixo.style.fontSize = "40px";
-
-			var txtcima = document.getElementById("textocima")
-			txtcima.style.fontSize = "40px";
-		}
-
-		function diminuiLetra() {
-			var txtbaixo = document.getElementById("textobaixo")
-			var txtcima = document.getElementById("textocima")
-
-			if (txtbaixo.style.fontSize == "30px" && txtcima.style.fontSize == "30px") {
-				txtbaixo.style.fontSize = "20px";
-				txtcima.style.fontSize = "20px";
-			}else if (txtbaixo.style.fontSize == "40px" && txtcima.style.fontSize == "40px") {
-				txtbaixo.style.fontSize = "30px";
-				txtcima.style.fontSize = "30px";
-			}			
-		}
-
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-	<span id="fonte1">Gerador de Memes BRABO</span>
-	<div>
-		<span>Selecione uma imagem de fundo para seu meme: </span><input type="file" name="image" id="diretorio"
-			onchange="loadFile(event)" />
+	<center>
+		<span id="fonte1">Gerador de Memes BRABO</span>
+		<div>
+			<span>Selecione uma imagem de fundo para seu meme: </span><input type="file" name="image" id="diretorio"
+				onchange="loadFile(event)" />
+		</div>
+		<span>Digite aqui uma frase para parte de <strong>cima</strong> do seu meme: </span><input type="text"
+			id="frasecima" maxlength="55" onkeyup="textoCima(frasecima)"><br>
+		<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text"
+			id="frasebaixo" maxlength="55" onkeyup="textoBaixo(frasebaixo)"><br>
+		<div style="display: inline-flex;">
+			<div id="preto" onclick="corFonte('black')"></div>
+			<div id="branco" onclick="corFonte('white')"></div>
+			<div id="verde" onclick="corFonte('green')"></div>
+			<button style="margin-left: 20px" type="submit" onclick="aumentaLetra()">Aumentar Letra</button>
+			<button type="submit" onclick="diminuiLetra()">Diminuir Letra</button>
+		</div>
+		<div style="margin-top: 1%">
+			<button type="submit" onclick="mudaBorda('dashed')">Borda Pontilhada Linhas</button>
+			<button type="submit" onclick="mudaBorda('dotted')">Borda Pontilhada Pontos</button>
+			<button type="submit" onclick="mudaBorda('double')">Borda Dupla</button>
+		</div>
+		<div class="img" id="img">
+			<img id="output" alt="Gerador de Memes" />
+			<p id="textocima" class="fonte"></p>
+			<p id="textobaixo" class="fonte"></p>
+		</div>
+	</center>
+	<div id="templates">
+			<div id="template1" onclick="mudaTemplate('tunico.jpeg')">
+				<img class="templateimg" src="tunico.jpeg" onclick="mudaTemplate('tunico.jpeg')">
+			</div>
+			<div id="template2" onclick="mudaTemplate('antonio3.png')">
+				<img class="templateimg" src="antonio3.png" onclick="mudaTemplate('antonio3.png')">
+			</div>
+			<div id="template3" onclick="mudaTemplate('antonio2.png')">
+				<img class="templateimg" src="antonio2.png" onclick="mudaTemplate('antonio2.png')">
+			</div>
 	</div>
-	<span>Digite aqui uma frase para parte de <strong>cima</strong> do seu meme: </span><input type="text"
-		id="frasecima" maxlength="55" onkeyup="textoCima(frasecima)"><br>
-	<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text" id="frase"
-		maxlength="55" onkeyup="textoBaixo(frase)"><br>
-	<div style="margin-left: 10%">
-		<button type="submit" onclick="aumentaLetra()">Aumentar Letra</button>
-		<button type="submit" onclick="diminuiLetra()">Diminuir Letra</button>
-	</div>
-	<div class="img">
-		<img id="output" alt="Gerador de Memes" />
-		<p id="textocima" class="fonte"></p>
-		<p id="textobaixo" class="fonte"></p>
-	</div>
+		
 </body>
 
 </html>

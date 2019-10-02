@@ -1,7 +1,12 @@
-.img{
+body{
+    background: #c2c2c2;
+}
+
+#img{
     width: 400px;
     height: 400px;
-    margin: 15px 0px 10px 6px;
+    margin-top: 1%;
+    right: 35%;
     border-width: 5px;
     border-style: solid;
     border-color: green;
@@ -14,16 +19,16 @@
 }
 
 #diretorio{
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
-#frase{
+#frasebaixo{
     margin: 0px 0px 10px 0px;
     text-align: center;
 }
 
 #frasecima{
-    margin: 25px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
     text-align: center;
 }
 
@@ -64,4 +69,64 @@
 
 strong{
     color: green;
+}
+
+#preto{
+    background: black;
+    width: 20px;
+    height: 20px;
+}
+
+#branco{
+    background: white;
+    width: 20px;
+    height: 20px;
+}
+
+#verde{
+    background: green;
+    width: 20px;
+    height: 20px;
+}
+
+#template1 {
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    position: relative;
+}
+#template2 {
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    position: relative;
+    margin-top: 5px;
+}
+#template3 {
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    position: relative;
+    margin-top: 5px;
+}
+
+#templates {
+    display: inline;
+    margin-top: 1.5%;
+    margin-left: 11%;
+    position: absolute;
+}
+
+.templateimg {
+    width: 120px;
+    height: 120px;
 }
