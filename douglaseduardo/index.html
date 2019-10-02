@@ -10,26 +10,31 @@
 </head>
 
 <body>
-    <form action ="post">
-        <input id="texto" type="text" name="username" placeholder="texto do meme">
-    </form>
+<div id="barraSuperior">
+    <input type="file" />
+    <input id="texto1" type="text" name="memeCima" placeholder="texto de cima imagem">
+    <input id="texto2" type="text" name="memeBaixo" placeholder="texto de baixo imagem">
+</div>
+    
 
-
-    <h3 id="tex_menu">Escolha um MEME</h3>
-        <ul class="miniaturas">
-        <li><img src="imagens/godplease.jpg" alt="desanimo"  id="foto1"></li>
-        <li><img src="imagens/jura.jpg" alt="menino"  id="foto2" ></li>
-        <li><img src="imagens/kiko.jpg" alt="mulherpensando"  id="foto3" ></li>
-        <li><img src="imagens/mudarseassunto.jpg" alt="chorandomuinto"  id="foto4" ></li>
-        <li><img src="imagens/rir.jpg" alt="chorandomuinto"  id="foto5" ></li>
+    <ul id="menu">
+        <li id="escolha">ESCOLHA SEU MEME</li>
+        <li><img class="miniaturas" src="imagens/godplease.jpg" alt="desanimo"  id="foto1"></li>
+        <li><img class="miniaturas" src="imagens/jura.jpg" alt="menino"  id="foto2" ></li>
+        <li><img class="miniaturas" src="imagens/kiko.jpg" alt="mulherpensando"  id="foto3" ></li>
+        <li><img class="miniaturas" src="imagens/mudarseassunto.jpg" alt="chorandomuinto"  id="foto4" ></li>
+        <li><img class="miniaturas" src="imagens/rir.jpg" alt="chorandomuinto"  id="foto5" ></li>
     </ul>
 </div>
 <div class="fotoprincipal">
-    <img src="imagens/godplease.jpg" alt="meme" id="fotoparatrocar">
-
+    <!--img src="imagens/godplease.jpg" alt="meme" id="fotoparatrocar"-->
+</div>
+<div id="salvar">
+<input type="submit" value="Salvar">
+<input type="Reset" value="Apagar tudo">
 </div>
 <p id="texto_meme"></p>
-<input type="file" />
+
 
 <script src="script.js"></script>
 </body>

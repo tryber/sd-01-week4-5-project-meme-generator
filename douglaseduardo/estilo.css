@@ -1,27 +1,36 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
 body {
     background-image: url("imagens/novaback.jpg");
     background-color: #cccccc;
 }
-
-.menu {
-    border-radius: 4px;
-    width: 150px;
-    margin-left: 15px;
-    margin-right: 500px;
-    position:relative;
-    float: left;
+#escolha {
+    color: aliceblue;
+    padding-bottom: 15px;
+    
 }
-
-img {
+.miniaturas {
+    width: 190px;
+    height: 150px;
+    padding-top: 42px;
     border: 1px solid rgb(224, 15, 15);
     border-radius: 4px;
     padding: 5px;
     max-width: 100%;
     max-height: 100%;
-    width: 93%;
+    
+}
+#menu{
+    width: 237px;
+    position: absolute;
+    top: 39px;
+    
 }
 
-img:hover {
+.miniaturas:hover {
     box-shadow: 0 0 20px 10px rgba(231, 177, 140, 0.5);
 }
 
@@ -39,44 +48,34 @@ h3 {
     font-size: 20px;
 }
 
-ul.miniaturas {
-    position: absolute;
-    width: 189px;
-    padding-top: 42px;
-}
+
 
 .fotoprincipal {
-    width: 67%;
-    position: relative;
-    float: right;
-    margin-right: 114px;
-    padding-top: 60px;
-    
+    width: 960px;
+    height: 600px;
+    top: 127px;
+    left: 33%;
+    position: absolute;
+    border: 1px solid red
 }
-form {
-    position: relative;
-    width: 507px;
-    margin: 15px auto 0 auto;
-    text-align: center;
-}
+
 input {
-    width: 790px;
-    height: 50px;
-    margin-top: 26px;
-    padding: 0 15px;
+    top: 51px;
+    height: 29px;
     background:rgba(45, 45, 45, 0.52);
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     border-radius: 16px;
     border: 1px solid #3d3d3d;
     border: 1px solid rgba(255,255,255,.15);
-    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
-    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+#barraSuperior{
+    position: absolute;
+    top: 39px;
+    left: 547px;
     
 }
 #texto_meme {
@@ -92,6 +91,22 @@ input {
     font-size: 40px;
     text-align: center;
     margin-block-start: 11em;
+}
+.btn{
+    font-family: arial;
+    font-size:14px;
+    font-weight:700;
+    text-transform: uppercase;
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block;
+    text-decoration: none;
+}
+#salvar{
+    top: 805px;
+    left: 574px;
+    position: absolute;
 }
 
 
