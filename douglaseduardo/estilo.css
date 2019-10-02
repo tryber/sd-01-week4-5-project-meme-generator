@@ -23,10 +23,11 @@ body {
     max-height: 100%;
     
 }
+
 #menu{
     width: 237px;
     position: absolute;
-    top: 39px;
+    top: 9px;
     
 }
 
@@ -34,32 +35,16 @@ body {
     box-shadow: 0 0 20px 10px rgba(231, 177, 140, 0.5);
 }
 
-h3 {
-    text-shadow: 2px 8px 6px rgb(154, 52, 61);
-    color: aliceblue;
-    position: relative;
-    top: -38px;
-    left: 32px;
-    border-bottom-width: 24px;
-    margin-left: 8px;
-    margin-right: 1396px;
-    margin-block-end: -4em;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-
-
-.fotoprincipal {
+#fotoprincipal {
     width: 960px;
     height: 600px;
     top: 127px;
     left: 33%;
     position: absolute;
-    border: 1px solid red
+    border: 3px solid red
 }
 
-input {
+input, button {
     top: 51px;
     height: 29px;
     background:rgba(45, 45, 45, 0.52);
@@ -72,39 +57,54 @@ input {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
+input:focus, button:focus{
+    border-color: rgb(39, 136, 0);
+    border-block-start-color: aqua;
+    border: 2px solid;
+}
 #barraSuperior{
     position: absolute;
     top: 39px;
     left: 547px;
     
 }
-#texto_meme {
-    width: 837px;
-    position: absolute;
+
+.texto_meme {
     color: #fafafa;
-    margin: 537px;
     font: bold;
     word-break: break-all;
-    max-width: 100%;
-    display: table;
+    
+    
     padding: -18px;
     font-size: 40px;
     text-align: center;
     margin-block-start: 11em;
 }
-.btn{
-    font-family: arial;
-    font-size:14px;
-    font-weight:700;
-    text-transform: uppercase;
-    border:none;
-    padding:10px;
-    cursor: pointer;
-    display:inline-block;
-    text-decoration: none;
-}
+
 #salvar{
-    top: 805px;
+    top: 747px;
+    left: 1377px;
+    position: absolute;
+}
+
+#fotoparatrocar {
+    width: 960px;
+    height: 600px;
+}
+#texto_memeCima{
+    position: absolute;
+    top: -427px;
+    left: 16px;
+    
+}
+#texto_memeBaixo{
+    position: absolute;
+    bottom: 58px;
+    left: 25px;
+    
+}
+#cor{
+    top: 747px;
     left: 574px;
     position: absolute;
 }

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MEMES!!!</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
+
 <div id="barraSuperior">
-    <input type="file" />
+    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
     <input id="texto1" type="text" name="memeCima" placeholder="texto de cima imagem">
     <input id="texto2" type="text" name="memeBaixo" placeholder="texto de baixo imagem">
 </div>
@@ -26,14 +27,22 @@
         <li><img class="miniaturas" src="imagens/rir.jpg" alt="chorandomuinto"  id="foto5" ></li>
     </ul>
 </div>
-<div class="fotoprincipal">
-    <!--img src="imagens/godplease.jpg" alt="meme" id="fotoparatrocar"-->
+<div id="fotoprincipal">
+    <div class="texto_meme" id="texto_memeCima"></div>
+    <div class="texto_meme" id="texto_memeBaixo"></div>
+    <img src="" alt="meme" id="fotoparatrocar">
 </div>
 <div id="salvar">
-<input type="submit" value="Salvar">
-<input type="Reset" value="Apagar tudo">
+    <input type="button" onclick="cont();" value="Imprimir ou Salvar">
 </div>
-<p id="texto_meme"></p>
+<div id="cor">
+    <form>
+        <span style="color: aliceblue">Coloque sua cor favorita em sua moldura</span>
+        <input type="color" name="favcolor" value="#ff0000">
+        <input type="submit" onclick="trocarCor();">
+    </form>
+</div>
+
 
 
 <script src="script.js"></script>
