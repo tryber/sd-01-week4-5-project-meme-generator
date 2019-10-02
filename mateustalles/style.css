@@ -1,5 +1,6 @@
 body {
     overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 .center {
     position: fixed;
@@ -14,6 +15,35 @@ body {
     transform: translate(-50%,-50%);
     border: 2px solid black;
     overflow: auto;
+}
+
+.btn-tamanho-fonte {
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.btn-aumenta-fonte,.btn-diminui-fonte {
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+}
+
+.text-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .imagem-container {
