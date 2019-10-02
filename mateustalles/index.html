@@ -24,6 +24,8 @@
 
             </div>
             <div class="imagem-container">
+                <span class="text up"></span>
+                <span class="text down"></span>
                 <img class="imagem-meme" src="" />
             </div>
         </div>
@@ -41,9 +43,6 @@
     function inserirTexto(positionClass,index) {
         let texto = document.getElementsByClassName("frase-meme")[index];
             texto.addEventListener("keyup", function() {
-        let newText= document.createElement("span");
-        newText.className=positionClass;
-        document.querySelector(".imagem-container").appendChild(newText);
         document.getElementsByClassName(positionClass)[0].innerText=texto.value;
     })
     };
