@@ -2,6 +2,9 @@ body {
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
 }
+div {
+    cursor: default;
+}
 .center {
     position: fixed;
     margin-top: 5px;
