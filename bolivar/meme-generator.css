@@ -18,41 +18,41 @@
 }
 #text-left-top{
     position: absolute;
-    top: 480px;
-    left: 130px;
+    top: 580px;
+    left: 150px;
     width: 450px;
     overflow-wrap: break-word;
-    color: whitesmoke;
-    font-size: 50px;
+    color: blue;
+    font-size: 30px;
     font-weight: 10px;
 }
 #text-left-bottom{
     position: absolute;
-    top: 830px;
-    left: 130px;
+    top: 930px;
+    left: 150px;
     width: 450px;
     overflow-wrap: break-word;
-    color: whitesmoke;
+    color: blue;
     font-size: 50px;
     font-weight: 10px;
 }
 #text-right-top{
     position: absolute;
-    top: 480px;
+    top: 580px;
     left: 770px;
     width: 450px;
     overflow-wrap: break-word;
-    color: whitesmoke;
+    color: blue;
     font-size: 50px;
     font-weight: 10px;
 }
 #text-right-bottom{
     position: absolute;
-    top: 830px;
+    top: 930px;
     left: 770px;
     width: 450px;
     overflow-wrap: break-word;
-    color: whitesmoke;
+    color: blue;
     font-size: 50px;
     font-weight: 10px;
 }
