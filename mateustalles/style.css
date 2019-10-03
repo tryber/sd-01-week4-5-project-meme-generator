@@ -20,7 +20,7 @@ div {
     overflow: auto;
 }
 
-.btn-tamanho-fonte {
+.btn-container {
     position: absolute;
     background-color: black;
     text-align: center;
@@ -91,6 +91,13 @@ div {
 .text.down {
     bottom: 0%;
     left: 0%;
-
 }
 
+.borders {
+    width: 150px;
+    margin-top: 140px;
+}
+
+.btn-borders {
+    display:inline-block;
+}

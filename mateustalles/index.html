@@ -16,13 +16,24 @@
                     Selecione a imagem desejada: <input class="imagem-upload" type="file" name="imagem" accept="image/png, image/jpeg">
                 </form>                
             </div>
-            <div class="btn-tamanho-fonte">
+
+            <div class="btn-container">
                 <div class="btn-aumenta-fonte"><span class="text-button">+</span></div>
                 <br>
                 FONT SIZE<br><br>
                 <div class="btn-diminui-fonte"><span class="text-button">-</span></div> 
-
             </div>
+
+            <div class="btn-container borders">BORDERS<br><br>
+            <div class="btn-dotted">DOTTED</div>
+            <div class="btn-dashed">DASHED</div>
+            <div class="btn-solid">SOLID</div>
+            <div class="btn-double">DOUBLE</div>
+        </div>
+
+            
+   
+            
             <div class="imagem-container">
                 <span class="text up"></span>
                 <span class="text down"></span>
@@ -50,7 +61,7 @@
     //inserindo texto se referindo a classe e index do item input no documento.
     inserirTexto("text up",0);
     inserirTexto("text down",1)
-    
+
     //Botão de aumentar e diminuir fonte.
     let btnSize = document.querySelectorAll(".text-button");
     for (let i = 0 ; i < btnSize.length ; i++) {
@@ -80,6 +91,38 @@
              }
          });
     }
+
+    //Menu de mudança de bordas
+
+    let btnDotted = document.querySelector(".btn-dotted"),
+        btnDashed = document.querySelector(".btn-dashed"),
+        btnSolid = document.querySelector(".btn-solid"),
+        btnDouble = document.querySelector(".btn-double");
+
+    function mudaBorda(btn) {
+        btn.addEventListener ("click", function() {
+            if (btn == btnDotted) {
+            let imgContainer = document.querySelector(".imagem-container");
+            imgContainer.style.border="dotted";
+        }
+            else if (btn == btnDashed) {
+            let imgContainer = document.querySelector(".imagem-container");
+            imgContainer.style.border="dashed";
+            }
+            else if (btn == btnSolid) {
+            let imgContainer = document.querySelector(".imagem-container");
+            imgContainer.style.border="solid";
+            }
+            else if (btn == btnDouble) {
+            let imgContainer = document.querySelector(".imagem-container");
+            imgContainer.style.border="double";
+            }
+        });
+    }
+    mudaBorda(btnDotted);
+    mudaBorda(btnDashed);
+    mudaBorda(btnSolid);
+    mudaBorda(btnDouble);
 
     </script>
 
