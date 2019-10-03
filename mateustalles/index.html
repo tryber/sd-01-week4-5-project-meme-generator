@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>ULTIMATE MEME GENERATOR BR</title>
+        <title>ULTIMATE MEME GENERATOR BR - criado por Mateus Talles</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
                     Isira o texto INFERIOR para seu meme:
                     <input class="frase-meme" type="text" name="meme" maxlength="25"> <br> <br>
                     Selecione a imagem desejada: <input class="imagem-upload" type="file" name="imagem" accept="image/png, image/jpeg">
+                    <br><h6>Clique e arraste o canto inferior-direito para redimensionar!</h6>
                 </form>                
             </div>
 
@@ -58,8 +59,10 @@
                 <p class="text down"></p></div>
                 <img class="imagem-meme" src="" />
             </div>
+
+            
         </div>
-    
+       
 
     <script>
     //função de criar URL e adicionar imagem a partir do upload
@@ -141,6 +144,20 @@
             let imgMeme = document.querySelector(".imagem-meme");
             imgMeme.src=minis.src;
         })
+    }
+
+
+    //opcional, testando salvar imagens usando canvas
+    //tirado de: https://stackoverflow.com/questions/33668608/generate-an-image-of-a-div-and-save-as
+
+    //Creating dynamic link that automatically click
+    function downloadURI(uri, name) {
+        var link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        link.click();
+        //after creating link you should delete dynamic link
+        //clearDynamicLink(link); 
     }
 
     </script>
