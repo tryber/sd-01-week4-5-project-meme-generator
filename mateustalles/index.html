@@ -26,10 +26,10 @@
 
             <div class="btn-container borders">
                 BORDERS<br><br>
-            <div class="btn-dotted">DOTTED</div>
-            <div class="btn-dashed">DASHED</div>
-            <div class="btn-solid">SOLID</div>
-            <div class="btn-double">DOUBLE</div><br>
+            <div class="btn-borders" id="dotted">DOTTED</div>
+            <div class="btn-borders" id="dashed">DASHED</div>
+            <div class="btn-borders" id="solid">SOLID</div>
+            <div class="btn-borders" id="double">DOUBLE</div><br>
             <div>COLORS:</div><br>
             <div class="border-colors black" id="black"></div>
             <div class="border-colors blue" id="blue"></div>
@@ -103,35 +103,15 @@
 
     //Menu de mudança de bordas por tipo
 
-    let btnDotted = document.querySelector(".btn-dotted"),
-        btnDashed = document.querySelector(".btn-dashed"),
-        btnSolid = document.querySelector(".btn-solid"),
-        btnDouble = document.querySelector(".btn-double");
-
-    function mudaBorda(btn) {
-        btn.addEventListener ("click", function() {
-            if (btn == btnDotted) {
-            let imgContainer = document.querySelector(".imagem-container");
-            imgContainer.style.border="dotted";
-        }
-            else if (btn == btnDashed) {
-            let imgContainer = document.querySelector(".imagem-container");
-            imgContainer.style.border="dashed";
-            }
-            else if (btn == btnSolid) {
-            let imgContainer = document.querySelector(".imagem-container");
-            imgContainer.style.border="solid";
-            }
-            else if (btn == btnDouble) {
-            let imgContainer = document.querySelector(".imagem-container");
-            imgContainer.style.border="double";
-            }
+    let btnBordas = document.querySelectorAll(".btn-borders");
+    for (let tipo of btnBordas) {
+        console.log(tipo.id)
+        tipo.addEventListener ("click", function(){
+        let imgContainer = document.querySelector(".imagem-container");
+        imgContainer.style.border=tipo.id;
         });
     }
-    mudaBorda(btnDotted);
-    mudaBorda(btnDashed);
-    mudaBorda(btnSolid);
-    mudaBorda(btnDouble);
+
 
     //mudar cor das bordas;
 
