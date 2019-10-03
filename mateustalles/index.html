@@ -44,8 +44,8 @@
    
             
             <div class="imagem-container">
-                <span class="text up"></span>
-                <span class="text down"></span>
+                <div class="text-meme"><span class="text up"></span>
+                <p class="text down"></p></div>
                 <img class="imagem-meme" src="" />
             </div>
         </div>
@@ -63,13 +63,13 @@
     function inserirTexto(positionClass,index) {
         let texto = document.getElementsByClassName("frase-meme")[index];
             texto.addEventListener("keyup", function() {
-        document.getElementsByClassName(positionClass)[0].innerText=texto.value;
+        document.querySelector(positionClass).innerText=texto.value;
     })
     };
 
     //inserindo texto se referindo a classe e index do item input no documento.
-    inserirTexto("text up",0);
-    inserirTexto("text down",1)
+    inserirTexto(".text.up",0);
+    inserirTexto(".text.down",1)
 
     //Botão de aumentar e diminuir fonte.
     let btnSize = document.querySelectorAll(".text-button");

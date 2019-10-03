@@ -61,9 +61,9 @@ div {
     padding: 0px;
     text-align: center;
     font-size:50px;
-    border: 3px solid red;
+    border: 5px solid black;
     resize: both;
-    overflow: auto;
+    overflow: hidden;
     z-index: 5;
 }
 
@@ -74,7 +74,7 @@ div {
 
 .text {
     position:absolute;
-    display: inline;
+    text-align: center;
     margin: 0px 5px;
     max-width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -86,12 +86,19 @@ div {
 .text.up{
     top: 0%;
     left: 0%;
+    width: 100%;
+    text-align: center;
+
 }
 
 .text.down {
     bottom: 0%;
     left: 0%;
+    width: 100%;
+
+    text-align: center;
 }
+
 
 .borders {
     width: 150px;
