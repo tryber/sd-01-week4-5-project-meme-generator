@@ -10,11 +10,11 @@
         <p id="main-text">An Internet meme is a concept or idea that spreads "virally" from one person to another via the Internet. An Internet meme could be anything from an image to an email or video file; however, the most common meme is an image of a person or animal with a funny or witty caption. The proliferation of social media has led to Internet memes spreading very quickly and reaching more people.</p>
         <p id="collor-text">Let's make yours!</p>
         <h2>How much imagens do you like?</h2>
-        <select id="select" onchange="select(this)">
+        <select id="select" class="options" onchange="select(this)">
             <option>One Image</option>
             <option>Two Images</option>
         </select>
-        <h2>Upload the image(s)</h2>
+        <h2>Which image(s) will you use??</h2>
         <!-- Upload a File -->
         <!-- Form: defines a form that is used to collect user input -->
         <!-- Post: appends form-data inside the body of the HTTP request (data is not shown is in URL) -->
@@ -24,7 +24,7 @@
         <!-- Acept: specifies a filter for what file types the user can pick from the file input dialog box -->
         <!-- The onchange event occurs when the value of an element has been changed -->
         <!-- In a method, this refers to the owner object -->
-        <div class="meme-L">
+        <div class="meme-L options">
             <input type="file" id="file" accept="image/*" onchange="handleFile1(event)">
             <br>
             <div>
@@ -32,7 +32,7 @@
                 Insert a Text on Bottom: <input type="text" onkeyup="leftTextBottom(this)">
             </div>
         </div>
-        <div class="meme-R">
+        <div class="meme-R options">
             <input type="file" id="file" accept="image/*" onchange="handleFile2(event)">
             <br>
             <div>
@@ -40,18 +40,18 @@
                 Insert a Text on Bottom: <input type="text" onkeyup="rightTextBottom(this)">
             </div>
         </div>
-            </form>
-            <div class="meme-L">
-            <img id="meme-image1">
-            <div id="text-left-top"></div>
-            <div id="text-left-bottom"></div>
+            <div id="display">
+            <div class="meme-L" id="display-left">
+            <img id="meme-image1" width="500" height="500">
+            <p id="text-left-top"></p>
+            <p id="text-left-bottom"></p>
             </div>
-            <div class="meme-R">
-            <img id="meme-image2">
-            <div id="text-right-top"></div>
-            <div id="text-right-bottom"></div>
+            <div class="meme-R" id="display-right">
+            <img id="meme-image2" width="500" height="500">
+            <p id="text-right-top"></p>
+            <p id="text-right-bottom"></p>
             </div>
-
+            </div>
         
         
         
