@@ -25,25 +25,35 @@
             </div>
 
             <div class="btn-container borders">
-                BORDERS<br><br>
-            <div class="btn-borders" id="dotted">DOTTED</div>
-            <div class="btn-borders" id="dashed">DASHED</div>
-            <div class="btn-borders" id="solid">SOLID</div>
-            <div class="btn-borders" id="double">DOUBLE</div><br>
-            <div>COLORS:</div><br>
-            <div class="border-colors black" id="black"></div>
-            <div class="border-colors blue" id="blue"></div>
-            <div class="border-colors green" id="green"></div>
-            <div class="border-colors gold" id="gold"></div>
-            <div class="border-colors red" id="red"></div>
+                        BORDERS<br><br>
+                    <div class="btn-borders" id="dotted">DOTTED</div>
+                    <div class="btn-borders" id="dashed">DASHED</div>
+                    <div class="btn-borders" id="solid">SOLID</div>
+                    <div class="btn-borders" id="double">DOUBLE</div><br>
+                    <div>COLORS:</div><br>
+                    <div class="border-colors black" id="black"></div>
+                    <div class="border-colors blue" id="blue"></div>
+                    <div class="border-colors green" id="green"></div>
+                    <div class="border-colors gold" id="gold"></div>
+                    <div class="border-colors red" id="red"></div>
 
-        </div>
+            </div>
 
+            <div class="btn-container miniaturas">
+            <div class="mini-img-container"><img class="img-small" src="images/meme1.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme2.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme3.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme4.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme5.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme6.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme7.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme8.jpg"></div>
+            <div class="mini-img-container"><img class="img-small" src="images/meme9.jpg"></div>
 
+            </div>
+                
             
-   
-            
-            <div class="imagem-container">
+            <div class="imagem-container" id="img-container">
                 <div class="text-meme"><span class="text up"></span>
                 <p class="text down"></p></div>
                 <img class="imagem-meme" src="" />
@@ -52,7 +62,7 @@
     
 
     <script>
-    //função de criar URL a partir do upload
+    //função de criar URL e adicionar imagem a partir do upload
     const img = document.querySelector(".imagem-meme");
     const input = document.querySelector(".imagem-upload");
     input.addEventListener("change", function() {   
@@ -120,6 +130,16 @@
         color.addEventListener("click", function () {
             let imgContainer = document.querySelector(".imagem-container");
             imgContainer.style.borderColor = getComputedStyle(color).backgroundColor;
+        })
+    }
+
+    //atribuir imagem das miniaturas à moldura
+
+    let miniAturas = document.querySelectorAll(".img-small");
+    for (let minis of miniAturas) {
+        minis.addEventListener("click", function() {
+            let imgMeme = document.querySelector(".imagem-meme");
+            imgMeme.src=minis.src;
         })
     }
 

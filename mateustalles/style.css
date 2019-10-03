@@ -5,6 +5,7 @@ body {
 div {
     cursor: default;
 }
+
 .center {
     position: fixed;
     margin-top: 5px;
@@ -13,7 +14,7 @@ div {
     top: 50%;
     width: 65%;
     height: 95%;
-    padding: 0 35px;
+    padding: 0 35px 30px 35px;
     text-align: center;
     transform: translate(-50%,-50%);
     border: 2px solid black;
@@ -118,3 +119,19 @@ div {
 .green {background-color: #0FA36B;}
 .gold {background-color: goldenrod;}
 .red {background-color: red}
+
+
+.miniaturas {
+    position: absolute;
+    width: 150px;
+    right: 30px;
+    top: 280px;
+    max-height: 350px;
+    padding: 20px 10px;
+    overflow: auto;
+}
+
+.img-small {
+    max-width: 100%;
+    margin: 5px 0px;
+}
