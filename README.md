@@ -13,6 +13,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 1. Clone o repositório
   * `git clone https://github.com/tryber/sd-01-week4-5-project-meme-generator.git`.
+  * Entre na pasta do repositório que você acabou de clonar:
+    * `cd sd-01-week4-5-project-meme-generator`  
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
