@@ -28,10 +28,10 @@
             <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
             </p>
             <span class="inputtexto">Digite o texto que ficara na parte superior:</span>
-            <input type="text" id="textocima" maxlength="50"><br>
+            <input type="text" id="textocima" maxlength="56"><br>
 
             <span class="inputtexto">Digite o texto que ficara na parte inferior:</span>
-            <input type="text" id="textobaixo" maxlength="50"><br>
+            <input type="text" id="textobaixo" maxlength="56"><br>
 
             <span class="inputtexto">Selecione o tamanho da fonte:</span>
             <select id="tamanho" class = "options">
@@ -40,6 +40,13 @@
                 <option value="28px">28px</option>
                 <option value="32px">32px</option>
                 <option value="36px">36px</option>
+            </select><br>
+            
+            <span class="inputtexto">Selecione a borda da imagem:</span>
+            <select id="borda" class = "options">
+                <option value="5px">Borda tradicional</option>
+                <option value="2px">Borda fina</option>
+                <option value="15px">Borda grossa</option>
             </select><br>
 
             <span class="inputtexto">Selecione a cor da fonte:</span>
@@ -51,12 +58,6 @@
                 <option value="green">Verde</option>
             </select><br>
 
-            <span class="inputtexto">Selecione a borda da imagem:</span>
-            <select id="borda" class = "options">
-                <option value="5px">Borda tradicional</option>
-                <option value="2px">Borda fina</option>
-                <option value="15px">Borda grossa</option>
-            </select>
 
         </div><br>
 
@@ -75,6 +76,8 @@
             <img src="imagem4.jpeg" id="img4" alt="some text" width=99 height=99>
             <img src="imagem5.jpg" id="img5" alt="some text" width=99 height=99>
         </div>
+
+        <input type="button" class ="botaodown" onclick="printDiv('editconteiner')" value="CLIQUE AQUI PARA BAIXAR SEU MEME!" />
 
     </main>
 

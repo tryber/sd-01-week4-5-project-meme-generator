@@ -61,4 +61,14 @@ im5.addEventListener('click', function(){
 var tam = document.getElementById("tamanho");
 tam.addEventListener('change', function(){
     finalcima.style.fontSize = tam.value;
+    finalbaixo.style.fontSize = tam.value;
 })
+
+//baixando a imagem
+function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+}
