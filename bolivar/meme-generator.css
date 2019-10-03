@@ -1,9 +1,58 @@
+.options{
+    margin: 20px 20px 20px 20px;
+}
 .meme-R{
     display: none;
 }
+#display{
+    display:flex;
+    display:block;
+}
+#display-left{
+    float: left;
+    margin: 50px 50px 0px 100px;
+}
+#display-right{
+    float: right;
+    margin: 50px 100px 50px 10px;
+}
 #text-left-top{
     position: absolute;
+    top: 480px;
+    left: 130px;
+    width: 450px;
+    overflow-wrap: break-word;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 10px;
 }
 #text-left-bottom{
     position: absolute;
+    top: 830px;
+    left: 130px;
+    width: 450px;
+    overflow-wrap: break-word;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 10px;
+}
+#text-right-top{
+    position: absolute;
+    top: 480px;
+    left: 770px;
+    width: 450px;
+    overflow-wrap: break-word;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 10px;
+}
+#text-right-bottom{
+    position: absolute;
+    top: 830px;
+    left: 770px;
+    width: 450px;
+    overflow-wrap: break-word;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 10px;
 }
