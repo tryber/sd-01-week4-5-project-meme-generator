@@ -31,10 +31,12 @@
             <div class="btn-solid">SOLID</div>
             <div class="btn-double">DOUBLE</div><br>
             <div>COLORS:</div><br>
-            <div class="border-colors black"></div>
-            <div class="border-colors blue"></div>
-            <div class="border-colors green"></div>
-            <div class="border-colors gold"></div>
+            <div class="border-colors black" id="black"></div>
+            <div class="border-colors blue" id="blue"></div>
+            <div class="border-colors green" id="green"></div>
+            <div class="border-colors gold" id="gold"></div>
+            <div class="border-colors red" id="red"></div>
+
         </div>
 
 
@@ -99,7 +101,7 @@
          });
     }
 
-    //Menu de mudança de bordas
+    //Menu de mudança de bordas por tipo
 
     let btnDotted = document.querySelector(".btn-dotted"),
         btnDashed = document.querySelector(".btn-dashed"),
@@ -130,6 +132,16 @@
     mudaBorda(btnDashed);
     mudaBorda(btnSolid);
     mudaBorda(btnDouble);
+
+    //mudar cor das bordas;
+
+    let corBordas = document.querySelectorAll(".border-colors");
+    for (let color of corBordas) {
+        color.addEventListener("click", function () {
+            let imgContainer = document.querySelector(".imagem-container");
+            imgContainer.style.borderColor = getComputedStyle(color).backgroundColor;
+        })
+    }
 
     </script>
 
