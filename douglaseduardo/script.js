@@ -20,12 +20,13 @@ let foto_d = "imagens/mudarseassunto.jpg"
 let foto_e = "imagens/rir.jpg"
 let fotoUpload = document.querySelector("#imagemCarregada")
 let btnSubmit = document.querySelector("#fotoupload")
-
+let corBorda = document.querySelector("#colorido")
 
 //funções de trocar as fotos
 function trocarFoto(parametro) {
     fotoprincipal.src = parametro 
 }
+
 //adicionando a img ao div
 function loadFile(event) {
     fotoprincipal.src = URL.createObjectURL(event.target.files[0]);
@@ -82,8 +83,8 @@ function cont(){
     tela_impressao.window.close()
 }
 //função trocar cor moldura
-function trocarCor() {
-    divPrincipal.style.border = "3px, solid, favcolor"
-}
+corBorda.addEventListener("change", function(){
+    divPrincipal.style.borderColor = corBorda.value
+})
 
 
