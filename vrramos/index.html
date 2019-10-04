@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Meme Generator</title>
 </head>
 <body>
+    <!--Título Princíal-->    
+    <h1 id="titulo-principal">Meme Generator</h1>
     
+    <!--Opção para carregar a imagem-->
+    <input type="file" id="" onchange="carregarImagem(event)">
+    
+    <!--Local onde o Meme será gerado-->
+    <div class="local-imagem">
+        <img src="img/waiting.png" class="imagem-inserida"> 
+        
+        <div id="texto"> 
+            <p id="valor-saida"></p>  
+        </div>    
+    </div>
+    
+    <!--Input das informações do meme como imagem e texto-->
+    <div id="valores-de-entrada">
+        <label for="valor-frase">Insira a Frase:</label>
+        <input type="text" id="valor-input" maxlength="54" onkeyup="writeText()">            
+    </div>   
+    
+    <script src="js/script.js"></script>
+
 </body>
 </html>

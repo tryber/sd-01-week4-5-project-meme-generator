@@ -1,0 +1,43 @@
+.local-imagem {       
+    overflow: hidden;   
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    border-color: black;
+    position: absolute;
+    float: right;
+    margin-left: 55%;
+}
+
+#select-image { 
+    width: 100%;
+    height: 100%;
+}
+
+
+#titulo-principal {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imagem-inserida {
+    width: 100%;
+}
+
+#valor-saida {
+    word-break: break-all;
+    position: absolute;
+    margin-top: -110px;
+    font-size: 30px;
+    padding: 40px; 
+    text-align: center;    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#valores-de-entrada {
+    margin-top: 30px;
+}
