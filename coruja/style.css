@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background-image: url();
+}
+
+#colocar-imagem {
+    border: 2px solid rgb(107, 165, 107);
+    width: 33%;
+    height: 400px;
+    margin: 0 auto 0 auto;
+    margin-top: 40px;
+}
+
+#mensagem-meme{
+    font-size: 10mm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mensagem-meme2{
+    font-size: 10mm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
