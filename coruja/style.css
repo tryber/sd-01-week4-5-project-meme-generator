@@ -21,6 +21,7 @@ body{
     width: 41%;
     top:300px;
     margin-left: 1%;
+    color: yellow;
 }
 
 #mensagem-meme2{
@@ -30,6 +31,7 @@ body{
     width: 41%;
     top: 700px;
     margin-left: 1%;
+    color: yellow;
 }
 
 .imagem-inserida{
