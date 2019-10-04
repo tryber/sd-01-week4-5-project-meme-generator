@@ -1,10 +1,11 @@
-let btnStart = document.getElementsByClassName("btnfirst")[0]
-btnStart.addEventListener("mouseover", function clickStart(){
-    btnStart.classList.add("btnStart");
+var btnStart = document.getElementsByClassName("btnfirst")[0]
+btnStart.addEventListener("mouseover", function hoverMouseOn(){
+    btnStart.classList.add("btn");
 })
-btnStart.addEventListener("mouseleave", function unclickStart(){
-    btnStart.classList.remove("btnStart");
+btnStart.addEventListener("mouseleave", function hoverMouseOff(){
+    btnStart.classList.remove("btn");
 })
-btnStart.addEventListener("click", function clickLocationStart(){
-    window.location.href = "#secondpage";    
+btnStart.addEventListener("click", function clickMouseLocation(){
+    window.location.href = "#secondpage";   
 })
+var btnUpload
