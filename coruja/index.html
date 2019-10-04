@@ -11,7 +11,8 @@
 
     <h1>Gerador de memes</h1>
 
-    <p>Selecione uma imagem para que inicie a diversão </p><input type="file">
+    <p>Selecione uma imagem para que inicie a diversão </p>
+    <input type="file" id="selecionar-imagem" onchange="carregarImagem(event)">
     <br>
     <br>
     <p>Adicione seu texto para iniciar o meme</p>
@@ -23,12 +24,10 @@
     
 
     <div id="colocar-imagem">
-        <p id="mensagem-meme">
-            
+        <img src="img/waiting.png" class="imagem-inserida">
+        <p id="mensagem-meme" maxlength="20"></p>
+        <p id="mensagem-meme2" maxlenght="20"></p>
 
-        
-        </p>
-        <p id="mensagem-meme2"></p>
     </div>
    
    

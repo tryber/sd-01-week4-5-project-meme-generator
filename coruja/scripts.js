@@ -10,3 +10,8 @@ texto.addEventListener("keyup",function(){
 texto2.addEventListener("keyup",function(){
     message2.innerText = this.value;
 })
+
+function carregarImagem(event) {
+    let img = document.getElementsByClassName('imagem-inserida')[0];
+    img.src = URL.createObjectURL(event.target.files[0]);
+};

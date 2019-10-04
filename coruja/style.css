@@ -1,22 +1,36 @@
 body{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url();
 }
 
 #colocar-imagem {
-    border: 2px solid rgb(107, 165, 107);
+    border: 2px solid rgb(0, 0, 0);
     width: 33%;
     height: 400px;
     margin: 0 auto 0 auto;
     margin-top: 40px;
+    word-break: break-all;
 }
 
 #mensagem-meme{
     font-size: 10mm;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 2;
 }
 
 #mensagem-meme2{
     font-size: 10mm;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+}
+
+.imagem-inserida{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
 }
