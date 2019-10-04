@@ -1,0 +1,265 @@
+body{
+    margin: 0px;
+    background-color:#ffffff;
+    height: 2500px;
+
+}
+#headerbg{
+    z-index: 4;
+    width: 100%;
+    position: absolute;
+}
+#headerbg2{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+}
+#bg{
+    z-index: 0;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 25%;
+    float: right;
+    position: absolute;
+}
+.titlepage{
+    position: absolute;
+    width: 454px;
+    height: 147px;
+    left: 200px;
+    top: 500px;
+    color: #9B9999;
+    text-align: left;
+    font-family: 'Muli';
+    font-weight: bold;
+    font-size: 72px;
+    font-family: Muli;
+}
+.btnfirst{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    z-index: 5;
+    position: absolute;
+    width: 258px;
+    height: 89px;
+    left: 200px;
+    top: 720px;
+    border-radius: 13px;
+    font-size: 40px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+}
+.btn{
+    background-image: linear-gradient(45deg, #BC4E8A, #9D359E);    
+}
+#secondpage{
+    position: absolute;
+    float: bottom;
+    top: 1000px;
+    width: 100%;
+    height: 100%;
+}
+#forever-alone{
+    position: absolute;
+    margin-top: 80px;
+    z-index: 4;
+}
+#line{
+    position: absolute;
+    z-index: 2;
+    margin-top: -140px;
+}
+#bg2{
+    position: absolute;
+    padding-left: 75.6%;
+}
+.square-center{
+    width: 614px;
+    height: 614px;
+    border: 11px solid #BB3ABD;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 58%;
+
+}
+#filelabel{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    z-index: 5;
+    position: absolute;
+    width: 205px;
+    height: 70px;
+    left: 40%;
+    top: 1750px;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+input[type='file'] {
+    display: none;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+.btndonwload{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    z-index: 6;
+    position: absolute;
+    width: 205px;
+    height: 70px;
+    left: 53%;
+    top: 1750px;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+}
+input[type=text] {
+    width: 475px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: black;
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);
+    border-radius: 5px;
+}
+textarea {
+    color: white;
+}
+.textinput1{
+    position: absolute;
+    top: 1860px;
+    margin-left: 35%;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 25px;
+    width: 475px;
+    height: 50px;
+}
+.textinput2{
+    position: absolute;
+    top: 1950px;
+    margin-left: 35%;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 25px;
+    width: 475px;
+    height: 50px;
+}
+
+#btnmaistext1{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 1900px;
+    margin-left: 65%;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+    text-align: center;
+}
+
+#btnmenostext1{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 1900px;
+    margin-left: 68%;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+}
+
+#btnmaistext2{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 1990px;
+    margin-left: 65%;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+    text-align: center;
+}
+
+#btnmenostext2{
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 1990px;
+    margin-left: 68%;
+    border-radius: 13px;
+    font-size: 30px;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    font-family: Muli;
+}
+.line-methods {
+    background-color: #fff;
+    display: inline;
+    position: relative;
+    top: 2080px;
+    left: 30%;
+    list-style: none;
+}
+.line-method label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: Muli, Arial;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #444;
+    border-radius: 4px;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+}
+
+
+.line-methods input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.line-methods input[type="radio"]:checked + label {
+    background-image: linear-gradient(45deg, #D84395, #BB3ABD); 
+    border-color: #BB3ABD;
+    opacity: 0.7;
+    color: black;
+}
+.line-methods input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+.forms ul li{
+    display: inline;
+}
+
+  

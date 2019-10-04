@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />   
+</head>
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <header class="header">
+        <img id="headerbg"  src="image/Vector.svg" alt="background degradê">
+        <img id="headerbg2"  src="image/bg-interno.svg" alt="background com opacidade">
+    </header>
+    <img id="bg" src="image/vector-bg.svg" alt="Duas desenhos de pessoas mechendo em seus celulares">
+    <span class="titlepage">Meme Generator</span>
+    <button class="btnfirst">Start</button>
+    <div id="secondpage">
+        <img id="forever-alone" src="image/forever-alone.svg">
+        <img id="line" src="image/linha.svg">
+        <img id="bg2" src="image/bg2.png">
+    </div>
+    <div class="square-center">
+        <img src="" class="imginput" alt="meme">
+        <p id="memetexttop"></p>
+        <p id="memetextbottom"></p>
+    </div>
+    <div class="btnUpload">
+    <label id="filelabel"for="myFile">Upload</label>
+    <input type="file" id="myFile">
+    </div>
+    <button class="btndonwload">Donwload</button>
+    <div class="inputs">
+        <div class="textinput1">
+            <label>Text 1</label>
+            <input type="text" placeholder="Remember, be nice!" id="text1" name="userId">
+        </div>
+        <div class="btncontrolertext1">
+            <button id="btnmaistext1">+</button>
+            <button id="btnmenostext1">-</button>
+        </div>
+        <div class="textinput2">
+            <label>Text 2</label>
+            <input type="text" placeholder="Remember, be nice!" id="text1" name="userId">
+        </div>
+        <div class="btncontrolertext2">
+            <button id="btnmaistext2">+</button>
+            <button id="btnmenostext2">-</button>
+        </div>
+    </div>
+    <div class="forms">
+    <ul class="line-methods">
+        <li class="line-method dotted">
+          <input name="line_methods" type="radio" id="dottedborder">
+          <label for="dottedborder">Dotted border</label>
+        </li>
+      
+        <li class="line-method dashed">
+          <input name="line_methods" type="radio" id="dashedborder">
+          <label for="dashedborder">Dashed border</label>
+        </li>
+      
+        <li class="line-method solid">
+          <input name="line_methods" type="radio" id="solidborder">
+          <label for="solidborder">Solid border</label>
+        </li>
+    </ul>
+    </div>
+    
+</body>
+</html>
