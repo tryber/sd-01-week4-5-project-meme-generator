@@ -1,58 +1,127 @@
-.options{
-    margin: 20px 20px 20px 20px;
+body {
+    background-color: #FEFEFE;
 }
+#main-title {
+    background-color: #DF2935;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#main-title span{
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 60px;
+}
+#main-text{
+    font-size: 30px;
+}
+#collor-text{
+    font-size: 30px;
+    background-color: #DF2935;
+    text-align: center;
+    border-radius: 10px;
+}
+.subtitles {
+    font-size: 30px;
+    background-color: #DF2935;
+    padding: 8px;
+    border-radius: 10px;
+}
+.subtitles span {
+    font-size: 30px;
+    background-color: #FEFEFE;
+    padding: 2px;
+    border-radius: 10px;
+}
+.options{
+    background-color: #DF2935;
+    border: 3px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    padding:10px;
+}
+.optionsdiv{
+  display: flex;
+  justify-content: center;
+}
+.button{
+    font-size: 18px;
+    display: inline-block;
+    padding: 2px;
+}
+#border{
+    font-size: 30px;
+    background-color: #FEFEFE;
+    padding: 8px;
+    border-radius: 10px;
+}
+#size{
+    font-size: 30px;
+    background-color: #FEFEFE;
+    padding: 8px;
+    border-radius: 10px;
+}
+
 .meme-R{
     display: none;
 }
 #display{
     display:flex;
-    display:block;
+    justify-content: center;
 }
 #display-left{
-    float: left;
     margin: 50px 50px 0px 100px;
 }
 #display-right{
-    float: right;
     margin: 50px 100px 50px 10px;
 }
 #text-left-top{
     position: absolute;
-    top: 580px;
-    left: 150px;
+    top: 1600px;
+    left: 480px;
     width: 450px;
     overflow-wrap: break-word;
-    color: blue;
+    color: #FEFEFE;
     font-size: 30px;
-    font-weight: 10px;
+    font-weight: 50px;
 }
 #text-left-bottom{
     position: absolute;
-    top: 930px;
-    left: 150px;
+    top: 1970px;
+    left: 480px;
     width: 450px;
     overflow-wrap: break-word;
-    color: blue;
+    color: #FEFEFE;
     font-size: 30px;
-    font-weight: 10px;
+    font-weight: 50px;
 }
 #text-right-top{
     position: absolute;
-    top: 580px;
-    left: 770px;
+    top: 1600px;
+    left: 750px;
     width: 450px;
     overflow-wrap: break-word;
-    color: blue;
+    color: #FEFEFE;
     font-size: 30px;
-    font-weight: 10px;
+    font-weight: 50px;
 }
 #text-right-bottom{
     position: absolute;
-    top: 930px;
-    left: 770px;
+    top: 1950px;
+    left: 750px;
     width: 450px;
     overflow-wrap: break-word;
-    color: blue;
+    color: #FEFEFE;
     font-size: 30px;
-    font-weight: 10px;
+    font-weight: 50px;
+}
+.picture2 {
+    display: none;
+}
+.picture3 {
+    display: none;
 }
