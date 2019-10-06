@@ -1,14 +1,20 @@
 // Select Image
 function select(x) {
+    var textlefttop = document.getElementById("text-left-top");
+    var textleftbottom = document.getElementById("text-left-bottom");
     if (x.selectedIndex === 0){
         for(i = 0; i < document.getElementsByClassName("meme-R").length; i++){
             document.getElementsByClassName("meme-R")[i].style.display = "none";
-        } 
+        }
+        textlefttop.style.left = "480px"
+        textleftbottom.style.left = "480px"
     } 
     else if (x.selectedIndex === 1){
         for(i = 0; i < document.getElementsByClassName("meme-R").length; i++){
         document.getElementsByClassName("meme-R")[i].style.display = "block";
         }
+        textlefttop.style.left = "180px"
+        textleftbottom.style.left = "180px"
     }
 };
 
@@ -26,7 +32,7 @@ function handleFile2(event) {
     img.src = URL.createObjectURL(event.target.files[0]);
 }; 
 
-// Select the text    
+// Typing the text    
 function leftTextTop(x){
     document.getElementById("text-left-top").innerHTML = x.value;
 }
@@ -107,12 +113,11 @@ function changeBorder(){
 }
 
 // Select Size
-
-
 function changeSize(){
     var pixels = 30;
-    var n = "";
-    var textlefettop = document.getElementById("text-left-top");
+    var top = 1600;
+    var bottom = 1970;
+    var textlefttop = document.getElementById("text-left-top");
     var textleftbottom = document.getElementById("text-left-bottom");
     var textrighttop = document.getElementById("text-right-top");
     var textrightbottom = document.getElementById("text-right-bottom");
@@ -124,24 +129,33 @@ function changeSize(){
     else {
         for (i = 0; i < count; i ++){
             pixels += 5;
+            top -= 10;
+            bottom -= 10;
         }
     }
-    n = pixels.toString();
-    textlefettop.style.fontSize = n + "px";
+    var n = pixels.toString();
+    var m = top.toString();
+    var p = bottom.toString();
+    textlefttop.style.fontSize = n + "px";
+    textlefttop.style.top = m + "px";
     textleftbottom.style.fontSize = n + "px";
+    textleftbottom.style.top = p + "px";
     textrighttop.style.fontSize = n + "px";
+    textrighttop.style.top = m + "px";
     textrightbottom.style.fontSize = n + "px";
+    textrightbottom.style.top = p + "px";
+    text.innerHTML = n + "px";
     textLimitsLT();
     textLimitsLB();
     textLimitsRT();
     textLimitsRB();
-    removeCharacters(textlefettop, document.getElementById("input1"));
+    removeCharacters(textlefttop, document.getElementById("input1"));
     removeCharacters(textleftbottom, document.getElementById("input2"));
     removeCharacters(textrighttop, document.getElementById("input3"));
     removeCharacters(textrightbottom, document.getElementById("input4"));
 }
 
-
+// // Select Text Limits
 function textLimitsLT(){
     var p = document.getElementById("text-left-top");
     if (p.style.fontSize !== ""){
@@ -186,6 +200,7 @@ function textLimitsRB(){
     document.getElementById("input4").maxLength = n;
 }
 
+// // Erase the extra Characters
 function removeCharacters(text, input){
     var array = text.innerText.split("")
     for (i = 0; i < (array.length - input.maxLength); i++){
@@ -197,3 +212,121 @@ function removeCharacters(text, input){
     }
     text.innerText = write;
 };
+
+//Select Category
+function setCategory(x) {
+    if (x.selectedIndex === 0){
+        document.getElementsByClassName("picture1")[0].style.display = "block";
+        document.getElementsByClassName("picture2")[0].style.display = "none";
+        document.getElementsByClassName("picture3")[0].style.display = "none";
+    } 
+    else if (x.selectedIndex === 1){
+        document.getElementsByClassName("picture1")[0].style.display = "none";
+        document.getElementsByClassName("picture2")[0].style.display = "block";
+        document.getElementsByClassName("picture3")[0].style.display = "none";
+    }
+    else if (x.selectedIndex === 2){
+        document.getElementsByClassName("picture1")[0].style.display = "none";
+        document.getElementsByClassName("picture2")[0].style.display = "none";
+        document.getElementsByClassName("picture3")[0].style.display = "block";
+
+    }
+};
+
+
+
+function addEventClick(){
+    var imgtwo = document.getElementById("meme-image1");
+    var imgone = document.getElementById("meme-image2");
+    var img1 = document.getElementsByClassName("cats")
+    var img2 = document.getElementsByClassName("gretchen")
+    var img3 = document.getElementsByClassName("RuPaul")
+    var count = 0;
+    img1[0].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img1[0].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img1[0].src
+        }
+    })
+    img1[1].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img1[1].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img1[1].src
+        }
+    })
+    img1[2].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img1[2].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img1[2].src
+        }
+    })
+    img2[0].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img2[0].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img2[0].src
+        }
+    })
+    img2[1].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img2[1].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img2[1].src
+        }
+    })
+    img2[2].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img2[2].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img2[2].src
+        }
+    })
+    img3[0].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img3[0].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img3[0].src
+        }
+    })
+    img3[1].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img3[1].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img3[1].src
+        }
+    })
+    img3[2].addEventListener("click", function(){
+        count += 1
+        if (count % 2 == 0){
+            imgone.src = img3[2].src
+        }
+        else if (count % 2 !== 0){
+            imgtwo.src = img3[2].src
+        }
+    })
+}
+
+
+window.onload = function () {
+    addEventClick()
+}
+
