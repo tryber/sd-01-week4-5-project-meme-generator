@@ -19,26 +19,24 @@
             <input type="file" id="file" accept="image/*" onchange="handleFile1(event)">
             <br>
             <div>
-                Insert a Text on Top: <input type="text" onkeyup="leftTextTop(this)">
-                Insert a Text on Bottom: <input type="text" onkeyup="leftTextBottom(this)">
+                Insert a Text on Top: <input id= "input1" maxlength="59" type="text" onkeyup="leftTextTop(this)">
+                Insert a Text on Bottom: <input id= "input2" maxlength="59" type="text" onkeyup="leftTextBottom(this)">
             </div>
         </div>
-        <div class="meme-R options">
-            <input type="file" id="file" accept="image/*" onchange="handleFile2(event)">
             <br>
             <div>
-                Insert a Text on Top: <input type="text" onkeyup="rightTextTop(this)">
-                Insert a Text on Bottom: <input type="text" onkeyup="rightTextBottom(this)">
+                Insert a Text on Top: <input id= "input3" maxLength = "59" type="text" onkeyup="rightTextTop(this)" >
+                Insert a Text on Bottom: <input id= "input4" maxLength = "59" type="text" onkeyup="rightTextBottom(this)">
             </div>
         </div>
-        <button type="submit" onclick="changeBorder()">Change Border</button>
+        <button type="submit" onclick="changeBorder()" >Change Border</button>
         <p id="border">None</p>
         <button type="submit" onclick="changeSize()">Change Text-Size</button>
         <p id="size">None</p>
         <div id="display">
             <div class="meme-L" id="display-left">
                 <img id="meme-image1" width="500" height="500">
-                <p id="text-left-top"></p>
+                <p id="text-left-top" ></p>
                 <p id="text-left-bottom"></p>
             </div>
             <div class="meme-R" id="display-right">
