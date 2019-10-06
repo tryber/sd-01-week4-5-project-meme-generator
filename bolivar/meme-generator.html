@@ -2,37 +2,68 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Meme Generator </title>
+        <title>Meme Generator</title>
         <link href="meme-generator.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-        <h1 id="main-title">Meme Generator</h1>
+        <h1 id="main-title"><span>Meme Generator</span></h1>
         <p id="main-text">An Internet meme is a concept or idea that spreads "virally" from one person to another via the Internet. An Internet meme could be anything from an image to an email or video file; however, the most common meme is an image of a person or animal with a funny or witty caption. The proliferation of social media has led to Internet memes spreading very quickly and reaching more people.</p>
         <p id="collor-text">Let's make yours!</p>
-        <h2>How much imagens do you like?</h2>
+        <h2 class="subtitles"> <span>Do you wanna pick one of ours imagens? </span></h2>
+        <select id="select-meme-picture" class="options" onchange="setCategory(this)" >
+            <option>Cats</option>
+            <option>Gretchen</option>
+            <option>RuPaul's Drag Race</option>
+        </select>
+        <div class="picture1">
+        <img class="cats" src= "catcaa.jpg" width="200px" height="200px">
+        <img class="cats" src= "cats.jpg" width="200px" height="200px">
+        <img class="cats" src= "catss.jpg" width="200px" height="200px">
+        </div>
+        <div class="picture2">
+        <img class="gretchen" src= "gretc.jpg" width="200px" height="200px">
+        <img class="gretchen" src= "gretchen-meme.jpg" width="200px" height="200px">
+        <img class="gretchen" src= "gretchengretche.jpg" width="200px" height="200px">
+        </div>
+        <div class="picture3">
+        <img class="RuPaul" src= "oppalance.png" width="200px" height="200px">
+        <img class="RuPaul" src= "alyssa.png" width="200px" height="200px">
+        <img class="RuPaul" src= "valentina.png" width="200px" height="200px">
+        </div>
+        <h2 class="subtitles"> <span>How much imagens do you like? </span></h2>
         <select id="select" class="options" onchange="select(this)">
             <option>One Image</option>
             <option>Two Images</option>
         </select>
-        <h2>Which image(s) will you use??</h2>
+        <h2 class="subtitles"> <span>Which image(s) will you use?</span></h2>
+        <div class="optionsdiv">
         <div class="meme-L options">
-            <input type="file" id="file" accept="image/*" onchange="handleFile1(event)">
+            <input class="button" type="file" id="file" accept="image/*" onchange="handleFile1(event)">
             <br>
-            <div>
-                Insert a Text on Top: <input id= "input1" maxlength="59" type="text" onkeyup="leftTextTop(this)">
-                Insert a Text on Bottom: <input id= "input2" maxlength="59" type="text" onkeyup="leftTextBottom(this)">
-            </div>
-        </div>
+            Insert a Text on Top: <input id= "input1" maxlength="59" type="text" onkeyup="leftTextTop(this)">
             <br>
-            <div>
-                Insert a Text on Top: <input id= "input3" maxLength = "59" type="text" onkeyup="rightTextTop(this)" >
-                Insert a Text on Bottom: <input id= "input4" maxLength = "59" type="text" onkeyup="rightTextBottom(this)">
-            </div>
+            Insert a Text on Bottom: <input id= "input2" maxlength="59" type="text" onkeyup="leftTextBottom(this)">
         </div>
-        <button type="submit" onclick="changeBorder()" >Change Border</button>
+        <div class="meme-R options">
+            <input class="button" type="file" id="file" accept="image/*" onchange="handleFile2(event)">
+            <br>
+            Insert a Text on Top: <input id= "input3" maxLength = "59" type="text" onkeyup="rightTextTop(this)" >
+            <br>
+            Insert a Text on Bottom: <input id= "input4" maxLength = "59" type="text" onkeyup="rightTextBottom(this)">
+        </div>
+        </div>
+        <h2 class="subtitles"> <span>Do you wanna change the border and the text size?</span></h2>
+        <div class="optionsdiv">
+        <div class="options"> 
+        <button class="button" type="submit" onclick="changeBorder()">Change Border</button>
         <p id="border">None</p>
-        <button type="submit" onclick="changeSize()">Change Text-Size</button>
-        <p id="size">None</p>
+        </div>
+        <div class="options" id="options text-size">
+        <button class="button" type="submit" onclick="changeSize()"> Change Text-Size</button>
+        <p id="size">30px</p>
+        </div>
+        </div>
+        <h2 class="subtitles"><span>The Meme View</span></h2>
         <div id="display">
             <div class="meme-L" id="display-left">
                 <img id="meme-image1" width="500" height="500">
@@ -45,18 +76,12 @@
                 <p id="text-right-bottom"></p>
             </div>
         </div>
-        
-        
-        
-        
-
-        
-        
-        
-        
-      
-        
-        
-    </body>
+        <h2 class="subtitles"> <span> Website Developer: Anderson Bolivar Nascimento </span></h2> 
+        <div class="optionsdiv">   
+            <a target="_blank" href="https://www.facebook.com/anderson.bolivar.9"> <img width="50" height="50" class="little-icon-image" src="facebook_circle-512.png"> </a>
+            <a target="_blank" href="https://www.instagram.com/andyboli/"><img width="50" height="50" class="little-icon-image" src="insta.jpeg"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/anderson-bolivar-nascimento-b1a43613b/"><img width="50" height="50" class="little-icon-image" src="link.png"></a>
+        </div> 
+        </body>
     <script src="meme-generator.js"></script>
 </html>
