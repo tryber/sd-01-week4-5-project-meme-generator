@@ -48,11 +48,10 @@ function rightTextBottom(x){
 var count = 0;
 
 function changeBorder(){
-    
     var img1 = document.getElementById("meme-image1");
     var img2 = document.getElementById("meme-image2");
     var text = document.getElementById("border")
-    count += 1
+    count += 1;
     if (count == 1){
         img1.style.border = "10px solid red"
         img2.style.border = "10px solid red"
@@ -99,13 +98,102 @@ function changeBorder(){
         img2.style.border = "10px dotted pink"
         text.innerHTML = "Damares"
     }
-    else if (count == 9){
+    else {
         img1.style.border = "none"
         img2.style.border = "none"
         text.innerHTML = "None"
-    }
-    else {
         count = 0;
     }
 }
 
+// Select Size
+
+
+function changeSize(){
+    var pixels = 30;
+    var n = "";
+    var textlefettop = document.getElementById("text-left-top");
+    var textleftbottom = document.getElementById("text-left-bottom");
+    var textrighttop = document.getElementById("text-right-top");
+    var textrightbottom = document.getElementById("text-right-bottom");
+    var text = document.getElementById("size")
+    count += 1
+    if (count > 7){ 
+        count = 0;
+    }
+    else {
+        for (i = 0; i < count; i ++){
+            pixels += 5;
+        }
+    }
+    n = pixels.toString();
+    textlefettop.style.fontSize = n + "px";
+    textleftbottom.style.fontSize = n + "px";
+    textrighttop.style.fontSize = n + "px";
+    textrightbottom.style.fontSize = n + "px";
+    textLimitsLT();
+    textLimitsLB();
+    textLimitsRT();
+    textLimitsRB();
+    removeCharacters(textlefettop, document.getElementById("input1"));
+    removeCharacters(textleftbottom, document.getElementById("input2"));
+    removeCharacters(textrighttop, document.getElementById("input3"));
+    removeCharacters(textrightbottom, document.getElementById("input4"));
+}
+
+
+function textLimitsLT(){
+    var p = document.getElementById("text-left-top");
+    if (p.style.fontSize !== ""){
+        var size = p.style.fontSize.split("");
+        var pixel = Number(size[0] + size[1]);
+        var result = 59 - (pixel - 30);
+        var n = result.toString();
+    }
+    document.getElementById("input1").maxLength = n;
+}
+
+function textLimitsLB(){
+    var p = document.getElementById("text-left-bottom");
+    if (p.style.fontSize !== ""){
+        var size = p.style.fontSize.split("");
+        var pixel = Number(size[0] + size[1]);
+        var result = 59 - (pixel - 30);
+        var n = result.toString();
+    }
+    document.getElementById("input2").maxLength = n;
+}
+
+function textLimitsRT(){
+    var p = document.getElementById("text-right-top");
+    if (p.style.fontSize !== ""){
+        var size = p.style.fontSize.split("");
+        var pixel = Number(size[0] + size[1]);
+        var result = 59 - (pixel - 30);
+        var n = result.toString();
+    }
+    document.getElementById("input3").maxLength = n;
+}
+
+function textLimitsRB(){
+    var p = document.getElementById("text-right-bottom");
+    if (p.style.fontSize !== ""){
+        var size = p.style.fontSize.split("");
+        var pixel = Number(size[0] + size[1]);
+        var result = 59 - (pixel - 30);
+        var n = result.toString();
+    }
+    document.getElementById("input4").maxLength = n;
+}
+
+function removeCharacters(text, input){
+    var array = text.innerText.split("")
+    for (i = 0; i < (array.length - input.maxLength); i++){
+        array.pop()
+    }
+    var write = ""
+    for (i = 0; i < array.length; i++){
+        write += array[i]
+    }
+    text.innerText = write;
+};
