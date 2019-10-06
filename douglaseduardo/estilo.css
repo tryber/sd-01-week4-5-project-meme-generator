@@ -70,13 +70,11 @@ input:focus, button:focus{
 }
 
 .texto_meme {
-    color: #fafafa;
+    
     font: bold;
     word-break: break-all;
-    
-    
     padding: -18px;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     margin-block-start: 11em;
 }
@@ -93,7 +91,7 @@ input:focus, button:focus{
 }
 #texto_memeCima{
     position: absolute;
-    top: -427px;
+    top: -497px;
     left: 16px;
     
 }
@@ -108,5 +106,13 @@ input:focus, button:focus{
     left: 574px;
     position: absolute;
 }
-
-
+#corTEXTO1{
+    top: 747px;
+    left: 995px;
+    position: absolute;
+}
+#corTEXTO2{
+    top: 747px;
+    left: 1150px;
+    position: absolute;
+}

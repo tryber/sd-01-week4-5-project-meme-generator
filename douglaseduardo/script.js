@@ -12,6 +12,7 @@ let texto1 = document.querySelector("#texto1")
 let texto2 = document.querySelector("#texto2")
 let textocima = document.querySelector("#texto_memeCima")
 let textobaixo = document.querySelector("#texto_memeBaixo")
+let textoMeme = document.querySelector(".texto_meme")
 //variaveis dos arquivos
 let foto_a = "imagens/godplease.jpg"
 let foto_b = "imagens/jura.jpg"
@@ -21,6 +22,8 @@ let foto_e = "imagens/rir.jpg"
 let fotoUpload = document.querySelector("#imagemCarregada")
 let btnSubmit = document.querySelector("#fotoupload")
 let corBorda = document.querySelector("#colorido")
+let corFonte1 = document.querySelector("#coloridoFONTE1")
+let corFonte2 = document.querySelector("#coloridoFONTE2")
 
 //funções de trocar as fotos
 function trocarFoto(parametro) {
@@ -76,15 +79,22 @@ textobaixo.innerHTML = texto2.value
 })
 
 //função para salvar o documento
-function cont(){
-    var tela_impressao = window.open('about:blank')
-    tela_impressao.document.write(divPrincipal.innerHTML)
-    tela_impressao.window.print()
-    tela_impressao.window.close()
+
+function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
 }
 //função trocar cor moldura
 corBorda.addEventListener("change", function(){
     divPrincipal.style.borderColor = corBorda.value
 })
-
-
+//cor da fonte
+corFonte1.addEventListener("change", function(){
+    textocima.style.color = corFonte1.value
+})
+corFonte2.addEventListener("change", function(){
+    textobaixo.style.color = corFonte2.value
+})
