@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Meme Generator</title>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />   
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
+
 <body>
     <header class="header">
-        <img id="headerbg"  src="image/Vector.svg" alt="background degradê">
-        <img id="headerbg2"  src="image/bg-interno.svg" alt="background com opacidade">
+        <img id="headerbg" src="image/Vector.svg" alt="background degradê">
+        <img id="headerbg2" src="image/bg-interno.svg" alt="background com opacidade">
     </header>
     <img id="bg" src="image/vector-bg.svg" alt="Duas desenhos de pessoas mechendo em seus celulares">
     <span class="titlepage">Meme Generator</span>
@@ -19,20 +22,23 @@
         <img id="line" src="image/linha.svg">
         <img id="bg2" src="image/bg2.png">
     </div>
-    <div class="square-center">
-        <img src="" class="imginput" alt="meme">
-        <p id="memetexttop"></p>
-        <p id="memetextbottom"></p>
-    </div>
     <div class="btnUpload">
-    <label id="filelabel"for="myFile">Upload</label>
-    <input type="file" id="myFile">
+        <label id="filelabel" for="myFile">Upload</label>
+        <input type="file" name="image" accept='image/*' onchange="loadFile(event)" id="myFile" />
+    </div>
+    <div class="box">
+        <img src="" class="imgoutput" alt="meme">
+        <div class="breaktext">
+            <p id="texttop"></p>
+            <p id="textbottom"></p>
+        </div>
     </div>
     <button class="btndonwload">Donwload</button>
     <div class="inputs">
         <div class="textinput1">
             <label>Text 1</label>
-            <input type="text" placeholder="Remember, be nice!" id="text1" name="userId">
+            <input type="text" maxlength="70" placeholder="Remember, be nice!" id="memetop"
+                onkeyup="showTextTop(event)" />
         </div>
         <div class="btncontrolertext1">
             <button id="btnmaistext1">+</button>
@@ -40,7 +46,8 @@
         </div>
         <div class="textinput2">
             <label>Text 2</label>
-            <input type="text" placeholder="Remember, be nice!" id="text1" name="userId">
+            <input type="text" maxlength="70" placeholder="Remember, be nice!" id="memebottom"
+                onkeyup="showTextBottom(event)" />
         </div>
         <div class="btncontrolertext2">
             <button id="btnmaistext2">+</button>
@@ -48,23 +55,24 @@
         </div>
     </div>
     <div class="forms">
-    <ul class="line-methods">
-        <li class="line-method dotted">
-          <input name="line_methods" type="radio" id="dottedborder">
-          <label for="dottedborder">Dotted border</label>
-        </li>
-      
-        <li class="line-method dashed">
-          <input name="line_methods" type="radio" id="dashedborder">
-          <label for="dashedborder">Dashed border</label>
-        </li>
-      
-        <li class="line-method solid">
-          <input name="line_methods" type="radio" id="solidborder">
-          <label for="solidborder">Solid border</label>
-        </li>
-    </ul>
+        <ul class="line-methods">
+            <li class="line-method dotted">
+                <input name="line_methods" type="radio" id="dottedborder">
+                <label for="dottedborder">Dotted border</label>
+            </li>
+
+            <li class="line-method dashed">
+                <input name="line_methods" type="radio" id="dashedborder">
+                <label for="dashedborder">Dashed border</label>
+            </li>
+
+            <li class="line-method solid">
+                <input name="line_methods" type="radio" id="solidborder">
+                <label for="solidborder">Solid border</label>
+            </li>
+        </ul>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

@@ -53,6 +53,9 @@ body{
 .btn{
     background-image: linear-gradient(45deg, #BC4E8A, #9D359E);    
 }
+.btn-upload-hover{
+    background-image: linear-gradient(45deg, #BC4E8A, #9D359E);    
+}
 #secondpage{
     position: absolute;
     float: bottom;
@@ -74,14 +77,30 @@ body{
     position: absolute;
     padding-left: 75.6%;
 }
-.square-center{
+.box{
     width: 614px;
     height: 614px;
     border: 11px solid #BB3ABD;
     position: absolute;
     margin-left: 35%;
     margin-top: 58%;
-
+}
+.imgoutput{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    word-break: break-all;
+    position: absolute;
+}
+.breaktext {
+    word-break: break-all;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+#uploadView{
+    width: 614px;
+    height: 614px;
 }
 #filelabel{
     background-image: linear-gradient(45deg, #D84395, #BB3ABD);    
@@ -101,6 +120,7 @@ body{
     padding: 15px;
     box-sizing: border-box;
 }
+
 
 input[type='file'] {
     display: none;
@@ -134,6 +154,35 @@ input[type=text] {
 }
 textarea {
     color: white;
+}
+#texttop{
+    z-index: 9;
+    color: #444;
+    word-break: break-all;
+    text-align: center;
+    top: 5px;
+    font-size: 30px;
+    color: #D84395;
+    font-family: Anton;
+}
+#textbottom{
+    bottom: 5px;
+    z-index: 10;
+    color: #444;
+    word-break: break-all;
+    font-size: 40px;
+    color: #D84395;
+    font-family: Anton;
+}
+p {
+    word-break: break-all;
+}
+.box p {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
 }
 .textinput1{
     position: absolute;
