@@ -32,12 +32,13 @@ salvar.addEventListener('click', function(){
     pegamemepS.id="txt-memec"+qtd;
     pegamemepS.innerHTML=inputtextoc.value
     pegamemepS.style.fontSize=txtUP.value*0.25;
+    pegamemepS.style.color=corSup.value;
 
     var pegamemepI=document.createElement("p");
     pegamemepI.className="txt-meme b";
     pegamemepI.id="txt-memeb"+qtd;
-    pegamemepI.innerHTML=inputtextob.value
-    
+    pegamemepI.innerHTML=inputtextob.value;
+    pegamemepI.style.color=corInf.value;
     pegamemepI.style.fontSize=txtDown*0.25;
 
     var pegamemeimg=document.createElement("img");
