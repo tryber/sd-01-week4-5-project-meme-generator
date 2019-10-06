@@ -33,7 +33,7 @@
     width: 450px;
     overflow-wrap: break-word;
     color: blue;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 10px;
 }
 #text-right-top{
@@ -43,7 +43,7 @@
     width: 450px;
     overflow-wrap: break-word;
     color: blue;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 10px;
 }
 #text-right-bottom{
@@ -53,6 +53,6 @@
     width: 450px;
     overflow-wrap: break-word;
     color: blue;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 10px;
 }
