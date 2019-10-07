@@ -1,6 +1,7 @@
 body {
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
+    background-color: black;
 }
 div {
     cursor: default;
@@ -22,6 +23,7 @@ div {
     transform: translate(-50%,-50%);
     border: 2px solid black;
     overflow: auto;
+    background-color: white;
 }
 
 .btn-container {
