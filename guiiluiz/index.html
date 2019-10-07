@@ -20,9 +20,9 @@
 		<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text"
 			id="frasebaixo" maxlength="55" onkeyup="textoBaixo(frasebaixo)"><br>
 		<div style="display: inline-flex;">
-			<div id="preto" onclick="corFonte('black')"></div>
-			<div id="branco" onclick="corFonte('white')"></div>
-			<div id="verde" onclick="corFonte('green')"></div>
+			<div class="corfonte" id="fontepreto" onclick="corFonte('black')"></div>
+			<div class="corfonte" id="fontebranco" onclick="corFonte('white')"></div>
+			<div class="corfonte" id="fonteverde" onclick="corFonte('green')"></div>
 			<button style="margin-left: 20px" type="submit" onclick="aumentaLetra()">Aumentar Letra</button>
 			<button type="submit" onclick="diminuiLetra()">Diminuir Letra</button>
 		</div>
