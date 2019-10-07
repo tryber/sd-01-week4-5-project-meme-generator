@@ -72,39 +72,19 @@ for(let i=0;i<colecao.length;i++){
     })
 }
 
-// colecao[0].addEventListener('click', function (){
-//   divImg.src = colecao[0].src;
-// })
-// colecao[1].addEventListener('click', function (){
-//   divImg.src = colecao[1].src;
-// })
-// colecao[2].addEventListener('click', function (){
-//   divImg.src = colecao[2].src;
-// })
-// colecao[3].addEventListener('click', function (){
-//   divImg.src = colecao[3].src;
-// })
-
-
 //funçoes para mudar o valor do font size dos textos da imagem
 txtUP.addEventListener('change', function (){
-    if(txtUP.value > 55){
-        txtUP.value = 55;
-    }
-    if(txtUP.value < 15){
-        txtUP.value = 15;
-    }
-    ptxtc.style.fontSize = txtUP.value;
+    ptxtc.style.fontSize = get_size_text(txtUP);
 })
 txtDown.addEventListener('change', function (){
-    if(txtDown.value > 55){
-        txtDown.value = 55;
-    }
-    if(txtDown.value < 15){
-        txtDown.value = 15;
-    }
-    ptxtb.style.fontSize = txtDown.value;
+    ptxtb.style.fontSize = get_size_text(txtDown);
 })
+
+function get_size_text(component){
+    if(component.value > 55) return 55;
+    if(component.value < 15) return 15;
+    return component.value;
+}
 //fim funçoes para mudar o tamanho
 
 //função para modificar as cores
