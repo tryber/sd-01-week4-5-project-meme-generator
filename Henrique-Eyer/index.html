@@ -1,0 +1,92 @@
+<html lang ="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <h1 class="tittle">Gerador de memes</h1>
+        
+        <div class="content">
+            
+            <div >
+                <!--Form para enviar a imagem desejada-->
+                <form id='formulario'>
+                    <!--Campo para o usuario pegar a imagem-->
+                    <label for="imagem">Select a picture:
+                        <input type="file" id="imagem" name="Imagem" accept="image/png, image/jpeg">
+                    </label>
+                </form>
+                <!--Campo para o usuario Digitar o texto do MEME-->
+                <label for="texto-meme">Texto Superior:
+                    <input class="ipttxt" type="text" name="" id="texto-memec" maxlength="48">
+                </label>
+                <br>
+                <label for="texto-meme2">Texto inferior:
+                    <input class="ipttxt" type="text" name="" id="texto-memeb" maxlength="48">
+                </label>
+                <br>
+                <!--Aumentar a letra-->
+                <label for="sizeletra-Up">Size texto superio:
+                    <input type="number" min="15" max="55"value="40" id="sizeletra-Up">
+                </label>
+                <br>
+                <label for="sizeletra-Down">Size texto inferior:
+                    <input type="number" min="15" max="55"value="40"  id="sizeletra-Down">
+                </label>
+                
+                <!--Mudar a cor das letras-->
+                <br>
+                <span >Font color</span><br>
+                
+                <div >
+                    <input type="color" id="corSup" name="head"
+                    value="#e6de64">
+                    <label for="head">Superior</label>
+                </div>
+                
+                <div >
+                    <input type="color" id="corInf" name="body"
+                    value="#e6de64">
+                    <label for="body">Inferior</label>
+                </div>
+                <br>
+                
+                <div id="colectionmemes" class="colectionmemes">
+                    <div class="memes"><img class="memesimg" src="imagens/meme_bebe.jpeg"></div>
+                    <div class="memes"><img class="memesimg" src="imagens/meme_choque_de_cultura.jpeg"></div>
+                    <div class="memes"><img class="memesimg" src="imagens/meme_classico.jpeg" ></div>
+                    <div class="memes"><img class="memesimg" src="imagens/meme_criança_Choramingando.jpeg"></div>
+                </div>
+
+                <span >Escolha a borda sua borda</span>
+                <select id="borda">
+                    <option value="solid">Solid</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="dashed">Dashed</option>
+                </select>
+                
+            </div>
+            
+            <!--Div onde aparece a imagem-->
+            <div class="div-imagem">
+                <img id="imagemMeme" alt="Imagem-meme">
+                <p class="txt-meme c" id="txt-memec"></p>
+                <p class="txt-meme b" id="txt-memeb"></p>
+            </div>
+
+            
+
+        </div>
+        <input type="button" value="Salvar" id="salvar">
+        <div class="collection">
+           
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
