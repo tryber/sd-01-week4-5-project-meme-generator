@@ -129,6 +129,8 @@ p{
     orientation: row;
 
     flex-wrap: wrap;
+
+    margin-top:10px;
 }
 
 
