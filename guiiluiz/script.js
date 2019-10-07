@@ -4,14 +4,9 @@ function loadFile(event) {
     image.src = URL.createObjectURL(event.target.files[0]);
 };
 
-function textoCima(frasecima) {
-    var txtcima = document.getElementById("textocima")
-    txtcima.innerHTML = frasecima.value;
-}
-
-function textoBaixo(frasebaixo) {
-    var txtbaixo = document.getElementById("textobaixo")
-    txtbaixo.innerHTML = frasebaixo.value;
+function textoFrase(frase,id) {
+    var txtbaixo = document.getElementById(id)
+    txtbaixo.innerHTML = frase.value;
 }
 
 function aumentaLetra() {
