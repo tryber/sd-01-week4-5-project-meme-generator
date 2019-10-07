@@ -13,43 +13,43 @@
         
         <div class="content">
             
-            <div class="content-text">
+            <div >
                 <!--Form para enviar a imagem desejada-->
                 <form id='formulario'>
                     <!--Campo para o usuario pegar a imagem-->
-                    <label class="texto-informativo" for="imagem">Select a picture:
+                    <label for="imagem">Select a picture:
                         <input type="file" id="imagem" name="Imagem" accept="image/png, image/jpeg">
                     </label>
                 </form>
                 <!--Campo para o usuario Digitar o texto do MEME-->
-                <label for="texto-meme" class="texto-informativo">Texto Superior:
+                <label for="texto-meme">Texto Superior:
                     <input class="ipttxt" type="text" name="" id="texto-memec" maxlength="48">
                 </label>
                 <br>
-                <label for="texto-meme2" class="texto-informativo">Texto inferior:
+                <label for="texto-meme2">Texto inferior:
                     <input class="ipttxt" type="text" name="" id="texto-memeb" maxlength="48">
                 </label>
                 <br>
                 <!--Aumentar a letra-->
                 <label for="sizeletra-Up">Size texto superio:
-                    <input type="number" min="15" max="55"value="40" class="tamLetra" id="sizeletra-Up">
+                    <input type="number" min="15" max="55"value="40" id="sizeletra-Up">
                 </label>
                 <br>
                 <label for="sizeletra-Down">Size texto inferior:
-                    <input type="number" min="15" max="55"value="40" class="tamLetra" id="sizeletra-Down">
+                    <input type="number" min="15" max="55"value="40"  id="sizeletra-Down">
                 </label>
                 
                 <!--Mudar a cor das letras-->
                 <br>
-                <span class="txtcolors">Font color</span><br>
+                <span >Font color</span><br>
                 
-                <div class="divcolors">
+                <div >
                     <input type="color" id="corSup" name="head"
                     value="#e6de64">
                     <label for="head">Superior</label>
                 </div>
                 
-                <div class="divcolors">
+                <div >
                     <input type="color" id="corInf" name="body"
                     value="#e6de64">
                     <label for="body">Inferior</label>
@@ -63,8 +63,8 @@
                     <div class="memes"><img class="memesimg" src="imagens/meme_criança_Choramingando.jpeg"></div>
                 </div>
 
-                <span class="txtborda">Escolha a borda sua borda</span>
-                <select id="borda" class = "options">
+                <span >Escolha a borda sua borda</span>
+                <select id="borda">
                     <option value="solid">Solid</option>
                     <option value="dotted">Dotted</option>
                     <option value="dashed">Dashed</option>
@@ -74,7 +74,7 @@
             
             <!--Div onde aparece a imagem-->
             <div class="div-imagem">
-                <img id="imagemMeme" alt="Imagem-meme" class="img-meme">
+                <img id="imagemMeme" alt="Imagem-meme">
                 <p class="txt-meme c" id="txt-memec"></p>
                 <p class="txt-meme b" id="txt-memeb"></p>
             </div>
