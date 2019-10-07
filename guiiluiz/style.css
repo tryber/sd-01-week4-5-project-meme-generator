@@ -71,22 +71,20 @@ strong{
     color: green;
 }
 
-#preto{
+.corfonte {
+    width: 20px;
+    height: 20px;
+}
+#fontepreto{
     background: black;
-    width: 20px;
-    height: 20px;
 }
 
-#branco{
+#fontebranco{
     background: white;
-    width: 20px;
-    height: 20px;
 }
 
-#verde{
+#fonteverde{
     background: green;
-    width: 20px;
-    height: 20px;
 }
 
 #template1 {
