@@ -75,6 +75,11 @@ strong{
     width: 20px;
     height: 20px;
 }
+
+#corfonte {
+    display: inline-flex;
+}
+
 #fontepreto{
     background: black;
 }
@@ -85,6 +90,10 @@ strong{
 
 #fonteverde{
     background: green;
+}
+
+.margintop {
+    margin-top: 1%;
 }
 
 .template {

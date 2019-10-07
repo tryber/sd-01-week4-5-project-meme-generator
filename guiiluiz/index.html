@@ -19,14 +19,14 @@
 			id="frasecima" maxlength="55" onkeyup="textoFrase(frasecima,'textocima')"><br>
 		<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text"
 			id="frasebaixo" maxlength="55" onkeyup="textoFrase(frasebaixo,'textobaixo')"><br>
-		<div style="display: inline-flex;">
+		<div id="corfonte">
 			<div class="corfonte" id="fontepreto" onclick="corFonte('black')"></div>
 			<div class="corfonte" id="fontebranco" onclick="corFonte('white')"></div>
 			<div class="corfonte" id="fonteverde" onclick="corFonte('green')"></div>
 			<button style="margin-left: 20px" type="submit" onclick="aumentaLetra()">Aumentar Letra</button>
 			<button type="submit" onclick="diminuiLetra()">Diminuir Letra</button>
 		</div>
-		<div style="margin-top: 1%">
+		<div class="margintop">
 			<button type="submit" onclick="mudaBorda('dashed')">Borda Pontilhada Linhas</button>
 			<button type="submit" onclick="mudaBorda('dotted')">Borda Pontilhada Pontos</button>
 			<button type="submit" onclick="mudaBorda('double')">Borda Dupla</button>
