@@ -1,7 +1,7 @@
 //variavel da div principal
-let divPrincipal = document.querySelector("#fotoprincipal")
+let divPrincipal = document.querySelector("#fotoPrincipal")
 //variaveis foto
-let fotoprincipal = document.querySelector("#fotoparatrocar")
+let fotoPrincipal = document.querySelector("#fotoParaTrocar")
 let foto1 = document.querySelector("#foto1")
 let foto2 = document.querySelector("#foto2")
 let foto3 = document.querySelector("#foto3")
@@ -10,17 +10,17 @@ let foto5 = document.querySelector("#foto5")
 //variaveis texto
 let texto1 = document.querySelector("#texto1")
 let texto2 = document.querySelector("#texto2")
-let textocima = document.querySelector("#texto_memeCima")
-let textobaixo = document.querySelector("#texto_memeBaixo")
-let textoMeme = document.querySelector(".texto_meme")
+let textoCima = document.querySelector("#textoMemeCima")
+let textoBaixo = document.querySelector("#textoMemeBaixo")
+let textoMeme = document.querySelector(".textoMeme")
 //variaveis dos arquivos
-let foto_a = "imagens/godplease.jpg"
-let foto_b = "imagens/jura.jpg"
-let foto_c = "imagens/kiko.jpg"
-let foto_d = "imagens/mudarseassunto.jpg"
-let foto_e = "imagens/rir.jpg"
+let fotoA = "imagens/godplease.jpg"
+let fotoB = "imagens/jura.jpg"
+let fotoC = "imagens/kiko.jpg"
+let fotoC = "imagens/mudarseassunto.jpg"
+let fotoE = "imagens/rir.jpg"
 let fotoUpload = document.querySelector("#imagemCarregada")
-let btnSubmit = document.querySelector("#fotoupload")
+let btnSubmit = document.querySelector("#fotoUpload")
 let corBorda = document.querySelector("#colorido")
 let corFonte1 = document.querySelector("#coloridoFONTE1")
 let corFonte2 = document.querySelector("#coloridoFONTE2")
@@ -34,25 +34,6 @@ function trocarFoto(parametro) {
 function loadFile(event) {
     fotoprincipal.src = URL.createObjectURL(event.target.files[0]);
 }
-
-//funções dos eventos TESTE
-// seção de mouser ouver
-// foto1.addEventListener("mouseover", function() {
-//     trocarFoto(foto_a)
-// })
-// foto2.addEventListener("mouseover", function() {
-//     trocarFoto(foto_b)
-// })
-// foto3.addEventListener("mouseover", function() {
-//     trocarFoto(foto_c)
-// })
-// foto4.addEventListener("mouseover", function() {
-//     trocarFoto(foto_d)
-// })
-// foto5.addEventListener("mouseover", function() {
-//     trocarFoto(foto_e)
-// })
-
 // seção de onclick
 foto1.addEventListener("click", function(){
     trocarFoto(foto_a)
