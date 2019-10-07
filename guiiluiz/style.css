@@ -87,7 +87,7 @@ strong{
     background: green;
 }
 
-#template1 {
+.template {
     width: 120px;
     height: 120px;
     bottom: 0;
@@ -97,23 +97,9 @@ strong{
     position: relative;
 }
 #template2 {
-    width: 120px;
-    height: 120px;
-    bottom: 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: green;
-    position: relative;
     margin-top: 5px;
 }
 #template3 {
-    width: 120px;
-    height: 120px;
-    bottom: 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: green;
-    position: relative;
     margin-top: 5px;
 }
 
