@@ -27,7 +27,7 @@ body {
 #menu{
     width: 237px;
     position: absolute;
-    top: 9px;    
+    top: 9px; 
 }
 
 .miniaturasMenu:hover {
@@ -70,6 +70,7 @@ input:focus, button:focus{
 }
 
 .textoMeme {
+    color: #ffffff;
     font: bold;
     word-break: break-all;
     padding: -18px;
