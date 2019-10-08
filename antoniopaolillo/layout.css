@@ -9,7 +9,7 @@ p, body{
 body{
     background-image: url(back2.jpg);
 }
-.divsconteiner{
+.container{
     margin-top: 3%;
     width: auto;
     height: auto;
@@ -24,12 +24,15 @@ body{
     height: 90px;
     margin-top: 3%;
 }
+
 #cabecalhomaior{
     font-size: 40px;
 }
+
 #cabecalhomenor{
     font-size: 20px;
 }
+
 .imgdisplay{
     width: 500px;
     height: 500px;
@@ -37,11 +40,9 @@ body{
     border-width: 5px;
     border-color: black;
     position: absolute;
-
 }
 
-.editconteiner {
-
+.editcontainer {
     position: relative;
     width: 500px;
     height: 500px;
@@ -57,13 +58,12 @@ body{
      word-break: break-all;
      padding: 10;
      text-transform: uppercase;
-
  }
  
  #textofinalbaixo{
     font-family: 'Passion One', cursive;
      font-size: 20px;
-     color: black;;
+     color: black;
      position: absolute;
      word-break: break-all;
      padding: 10;
@@ -71,7 +71,6 @@ body{
      text-transform: uppercase;
      margin-left: 20px;
      margin-bottom: 20px;
-    
  }
 
  .options{
@@ -88,7 +87,6 @@ body{
      cursor:pointer;
      border-color: black;
  }
-
 
  .textos{
      color: black;

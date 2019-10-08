@@ -14,7 +14,7 @@
 
 <body>
 
-    <main class="container">
+    <main>
 
         <!-- mensagens do cabeçalho -->
         <div class="cabecalho">
@@ -22,30 +22,30 @@
             <p id="cabecalhomenor">Escolha a imagem, digite o texto e divirta-se com as opções de layout!</p>
         </div>
 
-        <div class="divsconteiner">
+        <div class="container">
 
             <!-- classe dos inputs -->
             <div class="textos">
 
                 <!-- buscando o img -->
                 <p>Escolha o arquivo em seu computador:</p>
-                <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+                <p><input type="file" accept="image/*" name="image" id="file" onchange="adicionandoImagem(event)">
                 </p>
 
                 <!-- imagens pre-carregadas -->
-                <div class="imgcarregadas"><br>
+                <div><br>
                     <p>Ou utilize imagens prontas para serem estilizadas:</p>
-                    <img src="imagem1.jpg" id="img1" alt="some text" width=99 height=99>
-                    <img src="imagem2.jpg_large" id="img2" alt="some text" width=99 height=99>
-                    <img src="imagem3.jpg" id="img3" alt="some text" width=99 height=99>
-                    <img src="imagem4.jpeg" id="img4" alt="some text" width=99 height=99>
-                    <img src="imagem5.jpg" id="img5" alt="some text" width=99 height=99>
+                    <img src="imagem1.jpeg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem2.jpg_large" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem3.jpg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem4.jpeg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem5.jpg" class="imgcarregadas" width=99 height=99>
                 </div><br><Br>
 
-                <span class="inputtexto">Digite o texto que ficara na parte superior:</span>
+                <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
                 <input type="text" id="textocima" maxlength="60"><br>
 
-                <span class="inputtexto">Digite o texto que ficara na parte inferior:</span>
+                <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
                 <input type="text" id="textobaixo" maxlength="60"><br>
 
                 <span class="inputtexto">Selecione o tamanho da fonte:</span>
@@ -72,13 +72,13 @@
                     <option value="blue">Azul</option>
                     <option value="green">Verde</option>
                 </select><br>
-                
-                <input type="button" class="botaodown" onclick="printDiv('editconteiner')"
+
+                <input type="button" class="botaodown" onclick="printDiv('editcontainer')"
                     value="CLIQUE AQUI PARA BAIXAR SEU MEME!" />
             </div><br>
 
             <!-- resultado img + texto -->
-            <div class="editconteiner" id="editconteiner">
+            <div class="editcontainer" id="editcontainer">
                 <img id="output" class="imgdisplay" />
                 <p id="textofinalcima" class="fonteimg"></p>
                 <p id="textofinalbaixo" class="fonteimg"></p>
