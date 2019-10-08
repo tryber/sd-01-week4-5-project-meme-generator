@@ -10,23 +10,23 @@
 
 <body>
 	<center>
-		<span id="fonte1">Gerador de Memes BRABO</span>
+		<h1 id="fontetitle">Gerador de Memes BRABO</h1>
 		<div>
 			<span>Selecione uma imagem de fundo para seu meme: </span><input type="file" name="image" id="diretorio"
 				onchange="loadFile(event)" />
 		</div>
 		<span>Digite aqui uma frase para parte de <strong>cima</strong> do seu meme: </span><input type="text"
-			id="frasecima" maxlength="55" onkeyup="textoCima(frasecima)"><br>
+			id="frasecima" maxlength="55" onkeyup="textoFrase(frasecima,'textocima')"><br>
 		<span>Digite aqui uma frase para parte de <strong>baixo</strong> do seu meme: </span><input type="text"
-			id="frasebaixo" maxlength="55" onkeyup="textoBaixo(frasebaixo)"><br>
-		<div style="display: inline-flex;">
-			<div id="preto" onclick="corFonte('black')"></div>
-			<div id="branco" onclick="corFonte('white')"></div>
-			<div id="verde" onclick="corFonte('green')"></div>
+			id="frasebaixo" maxlength="55" onkeyup="textoFrase(frasebaixo,'textobaixo')"><br>
+		<div id="corfonte">
+			<div class="corfonte" id="fontepreto" onclick="corFonte('black')"></div>
+			<div class="corfonte" id="fontebranco" onclick="corFonte('white')"></div>
+			<div class="corfonte" id="fonteverde" onclick="corFonte('green')"></div>
 			<button style="margin-left: 20px" type="submit" onclick="aumentaLetra()">Aumentar Letra</button>
 			<button type="submit" onclick="diminuiLetra()">Diminuir Letra</button>
 		</div>
-		<div style="margin-top: 1%">
+		<div class="margintop">
 			<button type="submit" onclick="mudaBorda('dashed')">Borda Pontilhada Linhas</button>
 			<button type="submit" onclick="mudaBorda('dotted')">Borda Pontilhada Pontos</button>
 			<button type="submit" onclick="mudaBorda('double')">Borda Dupla</button>
@@ -38,15 +38,15 @@
 		</div>
 	</center>
 	<div id="templates">
-			<div id="template1" onclick="mudaTemplate('tunico.jpeg')">
-				<img class="templateimg" src="tunico.jpeg" onclick="mudaTemplate('tunico.jpeg')">
-			</div>
-			<div id="template2" onclick="mudaTemplate('antonio3.png')">
-				<img class="templateimg" src="antonio3.png" onclick="mudaTemplate('antonio3.png')">
-			</div>
-			<div id="template3" onclick="mudaTemplate('antonio2.png')">
-				<img class="templateimg" src="antonio2.png" onclick="mudaTemplate('antonio2.png')">
-			</div>
+		<div class="template" id="template1" onclick="mudaTemplate('tunico.jpeg')">
+			<img class="templateimg" src="tunico.jpeg" onclick="mudaTemplate('tunico.jpeg')">
+		</div>
+		<div class="template" id="template2" onclick="mudaTemplate('antonio3.png')">
+			<img class="templateimg" src="antonio3.png" onclick="mudaTemplate('antonio3.png')">
+		</div>
+		<div class="template" id="template3" onclick="mudaTemplate('antonio2.png')">
+			<img class="templateimg" src="antonio2.png" onclick="mudaTemplate('antonio2.png')">
+		</div>
 	</div>
 		
 </body>

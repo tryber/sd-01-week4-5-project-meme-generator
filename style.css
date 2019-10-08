@@ -60,7 +60,7 @@ body{
     text-transform: uppercase;
 }
 
-#fonte1{
+#fontetitle{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: green;
     font-size: 30px;
@@ -71,25 +71,32 @@ strong{
     color: green;
 }
 
-#preto{
+.corfonte {
+    width: 20px;
+    height: 20px;
+}
+
+#corfonte {
+    display: inline-flex;
+}
+
+#fontepreto{
     background: black;
-    width: 20px;
-    height: 20px;
 }
 
-#branco{
+#fontebranco{
     background: white;
-    width: 20px;
-    height: 20px;
 }
 
-#verde{
+#fonteverde{
     background: green;
-    width: 20px;
-    height: 20px;
 }
 
-#template1 {
+.margintop {
+    margin-top: 1%;
+}
+
+.template {
     width: 120px;
     height: 120px;
     bottom: 0;
@@ -99,23 +106,9 @@ strong{
     position: relative;
 }
 #template2 {
-    width: 120px;
-    height: 120px;
-    bottom: 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: green;
-    position: relative;
     margin-top: 5px;
 }
 #template3 {
-    width: 120px;
-    height: 120px;
-    bottom: 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: green;
-    position: relative;
     margin-top: 5px;
 }
 
