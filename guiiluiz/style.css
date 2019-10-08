@@ -1,0 +1,125 @@
+body{
+    background: #c2c2c2;
+}
+
+#img{
+    width: 400px;
+    height: 400px;
+    margin-top: 1%;
+    right: 35%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    position: absolute;
+}
+
+#output{
+    width: 400px;
+    height: 400px;
+}
+
+#diretorio{
+    padding: 10px 0px 0px 0px;
+}
+
+#frasebaixo{
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+#frasecima{
+    margin: 15px 0px 10px 0px;
+    text-align: center;
+}
+
+#textocima{
+    padding: 10px;
+    position: absolute;
+    top: -25px;
+    word-break: break-all;
+    z-index: 3;
+}
+
+#textobaixo{
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    word-break: break-all;
+    z-index: 2;
+}
+
+@font-face {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    src: url('Impact.ttf');
+}
+
+.fonte{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#fontetitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+strong{
+    color: green;
+}
+
+.corfonte {
+    width: 20px;
+    height: 20px;
+}
+
+#corfonte {
+    display: inline-flex;
+}
+
+#fontepreto{
+    background: black;
+}
+
+#fontebranco{
+    background: white;
+}
+
+#fonteverde{
+    background: green;
+}
+
+.margintop {
+    margin-top: 1%;
+}
+
+.template {
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    position: relative;
+}
+#template2 {
+    margin-top: 5px;
+}
+#template3 {
+    margin-top: 5px;
+}
+
+#templates {
+    display: inline;
+    margin-top: 1.5%;
+    margin-left: 11%;
+    position: absolute;
+}
+
+.templateimg {
+    width: 120px;
+    height: 120px;
+}
