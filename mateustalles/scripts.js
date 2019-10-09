@@ -13,8 +13,12 @@ function insertText(id) {
     })
 };
 
-insertText("meme-text1");
-insertText("meme-text2")
+function insertMemeTexts() {
+    insertText("meme-text1");
+    insertText("meme-text2")
+}
+
+insertMemeTexts();
 
 let memeTexts = document.querySelectorAll("[class^='text ']");
 document.querySelector(".btn-font-increase").addEventListener("click", function () {
