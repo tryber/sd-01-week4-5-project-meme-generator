@@ -7,7 +7,7 @@ function inserirImagem() {
 }
 
 function carregarImagem(event) {
-    let img = document.getElementsByClassName('imagem-inserida')[0];
+    let img = document.querySelector('.imagem-inserida');
     img.src = URL.createObjectURL(event.target.files[0]);
 };
 
@@ -16,5 +16,3 @@ function writeText(){
     let textoOutput = document.querySelector('#valor-saida')
     textoOutput.textContent = textoInput;
 }   
-
-inserirImagem()
