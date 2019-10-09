@@ -20,7 +20,7 @@ div {
     font-weight: 800;
 }
 
-.btn-font-increase,.btn-font-decrease {
+.button-font {
     position: relative;
     margin-left: 50%;
     transform: translate(-50%);
@@ -71,19 +71,17 @@ div {
     -webkit-text-stroke: 2px black;
     word-break:break-all;
   white-space:normal;
+  width: 100%;
+    text-align: center;
+    left: 0%;
 }
+
 .text.up{
     top: 0%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
 }
 
 .text.down {
     bottom: 0%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
 }
 
 .borders {
@@ -98,7 +96,9 @@ div {
     height: 15px;
     margin: 3px 1px;
 }
-.black{ background-color: black; border: 1px solid white;}
+.border-white {border: 1px solid white}
+
+.black{ background-color: black; }
 .blue {background-color: blue;}
 .green {background-color: #0FA36B;}
 .gold {background-color: goldenrod;}
