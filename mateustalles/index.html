@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>ULTIMATE MEME GENERATOR BR - criado por Mateus Talles</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <div> 
+            <div class="menu-div"><h1>Sejam bem-vindos e bem-vindas ao mais glorioso Meme Generator
+                da face da Terra! Criado aqui na Trybe!</h1>
+                <form>Insira o texto na parte superior do meme: 
+                    <input id="meme-text1" type="text" name="meme" maxlength="25"> <br> <br>
+                    Isira o texto na parte inferior do meme:
+                    <input id="meme-text2" type="text" name="meme" maxlength="25"> <br> <br>
+                    Selecione a imagem desejada: <input class="image-upload" type="file" name="image" accept="image/png, image/jpeg">
+                    <br><h6>Clique e arraste o canto inferior-direito do meme para redimensiona-lo!</h6>
+                </form>                
+            </div>
+
+            <div class="btn-container">
+                <div class="btn-font-increase"><span class="text-button">+</span></div>
+                <br>
+                TAMANHO DA FONTE:<br><br>
+                <div class="btn-font-decrease"><span class="text-button">-</span></div> 
+            </div>
+
+            <div class="btn-container borders">
+                        TIPOS DE BORDAS:<br><br>
+                    <div class="btn-borders" id="dotted">PONTILHADA</div>
+                    <div class="btn-borders" id="dashed">TRACEJADA</div>
+                    <div class="btn-borders" id="solid">SÓLIDA</div>
+                    <div class="btn-borders" id="double">DUPLAS</div><br>
+                    <div>CORES DE BORDA:</div><br>
+                    <div class="border-colors black" id="black"></div>
+                    <div class="border-colors blue" id="blue"></div>
+                    <div class="border-colors green" id="green"></div>
+                    <div class="border-colors gold" id="gold"></div>
+                    <div class="border-colors red" id="red"></div>
+            </div>
+
+            <div class="btn-container miniatures">
+                <div><img class="img-small" src="images/meme1.jpg"></div>
+                <div><img class="img-small" src="images/meme2.jpg"></div>
+                <div><img class="img-small" src="images/meme3.jpg"></div>
+                <div><img class="img-small" src="images/meme4.jpg"></div>
+                <div><img class="img-small" src="images/meme5.jpg"></div>
+                <div><img class="img-small" src="images/meme6.jpg"></div>
+                <div><img class="img-small" src="images/meme7.jpg"></div>
+                <div><img class="img-small" src="images/meme8.jpg"></div>
+                <div><img class="img-small" src="images/meme9.jpg"></div>
+            </div>
+            
+            <div class="image-container" id="img-container">
+                <span class="text up"></span>
+                <span class="text down"></span>
+                <img class="image-meme" src="" />
+            </div>
+        </div>
+    <script type="text/javascript" src="scripts.js">
+    </script>
+
+</body>
+</html>
