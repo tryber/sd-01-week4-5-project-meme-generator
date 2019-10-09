@@ -10,22 +10,18 @@
     <title>Meme Generator</title>
 </head>
 <body>
-    <!--Título Princíal-->    
-    <h1 id="titulo-principal">Meme Generator</h1>
+    <h1 id="titulo-principal">Meme Generator</h1>    
     
-    <!--Opção para carregar a imagem-->
-    <input type="file" id="" onchange="carregarImagem(event)">
+    <input type="file" id="carregar-imagem" onchange="carregarImagem(event)">    
     
-    <!--Local onde o Meme será gerado-->
     <div class="local-imagem">
         <img src="img/waiting.png" class="imagem-inserida"> 
         
         <div id="texto"> 
             <p id="valor-saida"></p>  
         </div>    
-    </div>
+    </div>   
     
-    <!--Input das informações do meme como imagem e texto-->
     <div id="valores-de-entrada">
         <label for="valor-frase">Insira a Frase:</label>
         <input type="text" id="valor-input" maxlength="54" onkeyup="writeText()">            
