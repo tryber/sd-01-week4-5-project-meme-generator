@@ -33,9 +33,9 @@
     for (let border of btnBorders) {
         console.log(border.id)
         border.addEventListener ("click", function(){
-        let imgContainer = document.querySelector(".image-container");
-        imgContainer.style.border=border.id;
-        });
+            let imgContainer = document.querySelector(".image-container");
+            imgContainer.style.border=border.id;
+            });
     }
 
     let corBordas = document.querySelectorAll(".border-colors");
