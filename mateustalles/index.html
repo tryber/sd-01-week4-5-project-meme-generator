@@ -7,31 +7,31 @@
 <body>
    
         <div class="center"> 
-            <div class="menu-div"><h1>Seja bem-vindos e bem-vindas ao mais glorioso Meme Generator
+            <div class="menu-div"><h1>Sejam bem-vindos e bem-vindas ao mais glorioso Meme Generator
                 da face da Terra! Criado aqui na Trybe!</h1>
-                <form>Insira o texto SUPERIOR para seu meme: 
-                    <input class="frase-meme" type="text" name="meme" maxlength="25"> <br> <br>
-                    Isira o texto INFERIOR para seu meme:
-                    <input class="frase-meme" type="text" name="meme" maxlength="25"> <br> <br>
+                <form>Insira o texto na parte superior do meme: 
+                    <input id="frase-meme1" type="text" name="meme" maxlength="25"> <br> <br>
+                    Isira o texto na parte inferior do meme:
+                    <input id="frase-meme2" type="text" name="meme" maxlength="25"> <br> <br>
                     Selecione a imagem desejada: <input class="imagem-upload" type="file" name="imagem" accept="image/png, image/jpeg">
-                    <br><h6>Clique e arraste o canto inferior-direito para redimensionar!</h6>
+                    <br><h6>Clique e arraste o canto inferior-direito do meme para redimensiona-lo!</h6>
                 </form>                
             </div>
 
             <div class="btn-container">
                 <div class="btn-aumenta-fonte"><span class="text-button">+</span></div>
                 <br>
-                FONT SIZE<br><br>
+                TAMANHO DA FONTE:<br><br>
                 <div class="btn-diminui-fonte"><span class="text-button">-</span></div> 
             </div>
 
             <div class="btn-container borders">
-                        BORDERS<br><br>
-                    <div class="btn-borders" id="dotted">DOTTED</div>
-                    <div class="btn-borders" id="dashed">DASHED</div>
-                    <div class="btn-borders" id="solid">SOLID</div>
-                    <div class="btn-borders" id="double">DOUBLE</div><br>
-                    <div>COLORS:</div><br>
+                        TIPOS DE BORDAS:<br><br>
+                    <div class="btn-borders" id="dotted">PONTILHADA</div>
+                    <div class="btn-borders" id="dashed">TRACEJADA</div>
+                    <div class="btn-borders" id="solid">SÓLIDA</div>
+                    <div class="btn-borders" id="double">DUPLAS</div><br>
+                    <div>CORES DE BORDA:</div><br>
                     <div class="border-colors black" id="black"></div>
                     <div class="border-colors blue" id="blue"></div>
                     <div class="border-colors green" id="green"></div>
@@ -55,8 +55,8 @@
                 
             
             <div class="imagem-container" id="img-container">
-                <div class="text-meme"><span class="text up"></span>
-                <p class="text down"></p></div>
+                <span class="text up"></span>
+                <span class="text down"></span>
                 <img class="imagem-meme" src="" />
             </div>
 
@@ -64,102 +64,7 @@
         </div>
        
 
-    <script>
-    //função de criar URL e adicionar imagem a partir do upload
-    const img = document.querySelector(".imagem-meme");
-    const input = document.querySelector(".imagem-upload");
-    input.addEventListener("change", function() {   
-        img.src = URL.createObjectURL(this.files[0]);
-    });
-
-    //função de inserir texto
-    function inserirTexto(positionClass,index) {
-        let texto = document.getElementsByClassName("frase-meme")[index];
-            texto.addEventListener("keyup", function() {
-        document.querySelector(positionClass).innerText=texto.value;
-    })
-    };
-
-    //inserindo texto se referindo a classe e index do item input no documento.
-    inserirTexto(".text.up",0);
-    inserirTexto(".text.down",1)
-
-    //Botão de aumentar e diminuir fonte.
-    let btnSize = document.querySelectorAll(".text-button");
-    for (let i = 0 ; i < btnSize.length ; i++) {
-    btnSize[i].addEventListener("click", function() {
-            if ( i== 0) {
-                let changeSizeUp = document.querySelector(".text.up");
-                let changeSizeDown = document.querySelector(".text.down");
-                    if (changeSizeUp.style.fontSize=="") {
-                        changeSizeUp.style.fontSize="53px";
-                        changeSizeDown.style.fontSize="53px";
-                    } else {
-                        changeSizeUp.style.fontSize=parseInt(changeSizeUp.style.fontSize) + 3 +"px";
-                        changeSizeDown.style.fontSize=parseInt(changeSizeDown.style.fontSize) + 3 +"px";
-                    }
-            }
-                
-             else if ( i == 1) {
-                let changeSizeUp = document.querySelector(".text.up");
-                let changeSizeDown = document.querySelector(".text.down");
-                    if (changeSizeUp.style.fontSize=="") {
-                        changeSizeUp.style.fontSize="47px";
-                        changeSizeDown.style.fontSize="47px";
-                    } else {
-                        changeSizeUp.style.fontSize=parseInt(changeSizeUp.style.fontSize) - 3 +"px";
-                        changeSizeDown.style.fontSize=parseInt(changeSizeDown.style.fontSize) - 3 +"px";
-                    }
-             }
-         });
-    }
-
-    //Menu de mudança de bordas por tipo
-
-    let btnBordas = document.querySelectorAll(".btn-borders");
-    for (let tipo of btnBordas) {
-        console.log(tipo.id)
-        tipo.addEventListener ("click", function(){
-        let imgContainer = document.querySelector(".imagem-container");
-        imgContainer.style.border=tipo.id;
-        });
-    }
-
-
-    //mudar cor das bordas;
-
-    let corBordas = document.querySelectorAll(".border-colors");
-    for (let color of corBordas) {
-        color.addEventListener("click", function () {
-            let imgContainer = document.querySelector(".imagem-container");
-            imgContainer.style.borderColor = getComputedStyle(color).backgroundColor;
-        })
-    }
-
-    //atribuir imagem das miniaturas à moldura
-
-    let miniAturas = document.querySelectorAll(".img-small");
-    for (let minis of miniAturas) {
-        minis.addEventListener("click", function() {
-            let imgMeme = document.querySelector(".imagem-meme");
-            imgMeme.src=minis.src;
-        })
-    }
-
-
-    //opcional, testando salvar imagens usando canvas
-    //tirado de: https://stackoverflow.com/questions/33668608/generate-an-image-of-a-div-and-save-as
-
-    //Creating dynamic link that automatically click
-    function downloadURI(uri, name) {
-        var link = document.createElement("a");
-        link.download = name;
-        link.href = uri;
-        link.click();
-        //after creating link you should delete dynamic link
-        //clearDynamicLink(link); 
-    }
-
+    <script type="text/javascript" src="scripts.js">
     </script>
 
 </body>
