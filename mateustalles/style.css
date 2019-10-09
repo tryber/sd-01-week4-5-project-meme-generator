@@ -1,7 +1,11 @@
 body {
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-color: black;
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
 }
 div {
     cursor: default;
@@ -10,6 +14,24 @@ div {
 .menu-div {
     font-weight: 800;
 }
+<<<<<<< HEAD
+=======
+.center {
+    position: fixed;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    left: 50%;
+    top: 50%;
+    width: 65%;
+    height: 95%;
+    padding: 0 35px 30px 35px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    overflow: auto;
+    background-color: white;
+}
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
 
 .btn-container {
     position: absolute;
@@ -20,7 +42,11 @@ div {
     font-weight: 800;
 }
 
+<<<<<<< HEAD
 .btn-font-increase,.btn-font-decrease {
+=======
+.btn-aumenta-fonte,.btn-diminui-fonte {
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
     position: relative;
     margin-left: 50%;
     transform: translate(-50%);
@@ -39,7 +65,11 @@ div {
     transform: translate(-50%,-50%);
 }
 
+<<<<<<< HEAD
 .image-container {
+=======
+.imagem-container {
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
     position: absolute;
     display: inline-flex;
     width: 50%;
@@ -52,6 +82,7 @@ div {
     padding: 0px;
     text-align: center;
     font-size:50px;
+<<<<<<< HEAD
     border: 8px solid black;
     resize: both;
     overflow: hidden;
@@ -59,6 +90,17 @@ div {
 
 .image-meme {   
     width: 100%;
+=======
+    border: 5px solid black;
+    resize: both;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.imagem-meme {    
+    width: 100%;
+
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
 }
 
 .text {
@@ -108,7 +150,11 @@ div {
 .red {background-color: red}
 
 
+<<<<<<< HEAD
 .miniatures {
+=======
+.miniaturas {
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
     position: absolute;
     width: 150px;
     right: 30px;
@@ -121,4 +167,8 @@ div {
 .img-small {
     max-width: 100%;
     margin: 5px 0px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c50b2cac25058f26258dedf3171b996930e81204
