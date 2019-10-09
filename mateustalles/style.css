@@ -70,8 +70,8 @@ div {
     color: white;
     -webkit-text-stroke: 2px black;
     word-break:break-all;
-  white-space:normal;
-  width: 100%;
+    white-space:normal;
+    width: 100%;
     text-align: center;
     left: 0%;
 }
