@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEMES!!!</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<div id="barraSuperior">
+    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+    <input id="texto1" type="text" name="memeCima" placeholder="texto de cima imagem">
+    <input id="texto2" type="text" name="memeBaixo" placeholder="texto de baixo imagem">
+</div>
+    <ul id="menu">
+        <li id="escolha">ESCOLHA SEU MEME</li>
+        <li><img class="miniaturasMenu" src="imagens/godplease.jpg" alt="desanimo"  id="foto1"></li>
+        <li><img class="miniaturasMenu" src="imagens/jura.jpg" alt="menino"  id="foto2" ></li>
+        <li><img class="miniaturasMenu" src="imagens/kiko.jpg" alt="mulherpensando"  id="foto3" ></li>
+        <li><img class="miniaturasMenu" src="imagens/mudarseassunto.jpg" alt="chorandomuinto"  id="foto4" ></li>
+        <li><img class="miniaturasMenu" src="imagens/rir.jpg" alt="chorandomuinto"  id="foto5" ></li>
+    </ul>
+</div>
+<div id="fotoPrincipal">
+    <div class="textoMeme" id="textoMemeCima"></div>
+    <div class="textoMeme" id="textoMemeBaixo"></div>
+    <img src="" alt="meme" id="fotoParaTrocar">
+</div>
+<div id="salvar">
+    <input type="button" onclick="printDiv('fotoPrincipal')" value="Imprimir ou Salvar">
+</div>
+<div id="cor">
+    <form>
+        <span>COR MOLDURA</span>
+        <input type="color" name="CorFavorita" value="#ff0000" id="colorido">
+    </form>
+</div>
+<div id="corTEXTO1">
+        <form>
+            <span>FONTE 1</span>
+            <input type="color" name="CorFavoritaFonte" value="#ffffff" id="coloridoFONTE1">
+        </form>
+    </div>
+    <div id="corTEXTO2">
+            <form>
+                <span>FONTE 2</span>
+                <input type="color" name="CorFavoritaFonte" value="#ffffff" id="coloridoFONTE2">
+            </form>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>

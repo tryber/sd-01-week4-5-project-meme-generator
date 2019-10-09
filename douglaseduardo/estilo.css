@@ -1,0 +1,125 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url("imagens/novaback.jpg");
+}
+
+#escolha {
+    color: aliceblue;
+    padding-bottom: 15px; 
+}
+
+.miniaturasMenu {
+    width: 190px;
+    height: 150px;
+    padding-top: 42px;
+    border: 1px solid rgb(224, 15, 15);
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 100%;    
+}
+
+#menu{
+    width: 237px;
+    position: absolute;
+    top: 9px; 
+}
+
+.miniaturasMenu:hover {
+    box-shadow: 0 0 20px 10px rgba(231, 177, 140, 0.5);
+}
+
+#fotoPrincipal {
+    width: 960px;
+    height: 600px;
+    top: 127px;
+    left: 33%;
+    position: absolute;
+    border: 3px solid red
+}
+
+input, button {
+    top: 51px;
+    height: 29px;
+    background:rgba(45, 45, 45, 0.52);
+    border-radius: 16px;
+    border: 1px solid #3d3d3d;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+input:focus, button:focus{
+    border-color: rgb(39, 136, 0);
+    border-block-start-color: aqua;
+    border: 2px solid;
+}
+
+#barraSuperior{
+    position: absolute;
+    top: 39px;
+    left: 547px;    
+}
+
+.textoMeme {
+    color: #ffffff;
+    font: bold;
+    word-break: break-all;
+    padding: -18px;
+    font-size: 50px;
+    text-align: center;
+    margin-block-start: 11em;
+}
+
+#salvar{
+    top: 747px;
+    left: 1377px;
+    position: absolute;
+}
+
+#fotoParaTrocar {
+    width: 954px;
+    height: 594px;
+}
+
+#textoMemeCima{
+    position: absolute;
+    top: -497px;
+    left: 16px;    
+}
+
+#textoMemeBaixo{
+    position: absolute;
+    bottom: 58px;
+    left: 25px;    
+}
+
+#cor{
+    top: 747px;
+    left: 574px;
+    position: absolute;
+}
+
+#corTEXTO1{
+    top: 747px;
+    left: 995px;
+    position: absolute;
+}
+
+#corTEXTO2{
+    top: 747px;
+    left: 1150px;
+    position: absolute;
+}
+
+span{
+    color: aliceblue;
+}
