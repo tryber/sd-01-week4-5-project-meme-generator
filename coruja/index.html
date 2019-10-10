@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>O incrível Gerador de Memes</title>
+</head>
+<body>
+    <h1>Gerador de memes</h1>
+    <p>Selecione uma imagem para que inicie a diversão </p>
+    <input type="file" id="selecionar-imagem" onchange="carregarImagem(event)">
+    <br>
+    <br>
+    <p>Adicione seu texto para iniciar o meme</p>
+    <br>
+    Texto superior: <input type="text" id="caixa-de-texto-superior">
+    <br>
+    <br>
+    Texto inferior: <input type="text" id="caixa-de-texto-inferior">
+    <div id="local-da-imagem-inserida">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-BbljLYhGpDi2TAFAf8h0DNGnruaTEig71O42MZCgSAhBVqi" class="imagem-inserida">
+        <p id="mensagem-parte-superior-da-foto-meme"></p>
+        <p id="mensagem-parte-inferior-da-foto-meme"></p>  
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
