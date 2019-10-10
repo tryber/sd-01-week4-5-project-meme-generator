@@ -12,7 +12,6 @@ textoInferior.addEventListener('keyup', function () {
     textoInferiorFinal.innerHTML = textoInferior.value;
 })
 
-//adicionando a img ao div
 function adicionandoImagem(event) {
     var image = document.getElementById('output');
     //caminho da imagem para o output
@@ -43,10 +42,10 @@ for (let i = 0; i < 5; i++) {
 }
 
 //alterando o tamanho da fonte 
-var tam = document.getElementById("tamanho");
-tam.addEventListener('change', function () {
-    textoSuperiorFinal.style.fontSize = tam.value;
-    textoInferiorFinal.style.fontSize = tam.value;
+var tamanho = document.getElementById("tamanho");
+tamanho.addEventListener('change', function () {
+    textoSuperiorFinal.style.fontSize = tamanho.value;
+    textoInferiorFinal.style.fontSize = tamanho.value;
 })
 
 //baixando a imagem
