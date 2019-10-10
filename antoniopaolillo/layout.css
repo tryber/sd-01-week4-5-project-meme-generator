@@ -1,0 +1,96 @@
+p, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+body{
+    background-image: url(back2.jpg);
+}
+.container{
+    margin-top: 3%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.cabecalho{
+    text-align: center;
+    color: black;
+    height: 90px;
+    margin-top: 3%;
+}
+
+#cabecalhomaior{
+    font-size: 40px;
+}
+
+#cabecalhomenor{
+    font-size: 20px;
+}
+
+.imgdisplay{
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+}
+
+.editcontainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+ #textofinalcima{
+    font-family: 'Passion One', cursive;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-top: 20px;
+     color: black;
+     position: absolute;
+     word-break: break-all;
+     padding: 10;
+     text-transform: uppercase;
+ }
+ 
+ #textofinalbaixo{
+    font-family: 'Passion One', cursive;
+     font-size: 20px;
+     color: black;
+     position: absolute;
+     word-break: break-all;
+     padding: 10;
+     bottom: 0;
+     text-transform: uppercase;
+     margin-left: 20px;
+     margin-bottom: 20px;
+ }
+
+ .options{
+     width: 200px;
+ }
+
+ .botaodown{
+     margin-top: 40px;
+     color: black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     height: 40px;
+     border-radius: 25px;
+     background-color: Transparent;
+     cursor:pointer;
+     border-color: black;
+ }
+
+ .textos{
+     color: black;
+     font-size: 25px;
+     text-align: center;
+     line-height: 30px;
+ }

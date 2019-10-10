@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>MEME GENERATOR</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable|Passion+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="layout.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- mensagens do cabeçalho -->
+        <div class="cabecalho">
+            <p id="cabecalhomaior">GERADOR DE MEMES</p>
+            <p id="cabecalhomenor">Escolha a imagem, digite o texto e divirta-se com as opções de layout!</p>
+        </div>
+
+        <div class="container">
+
+            <div class="textos">
+                <!-- buscando o img -->
+                <p>Escolha o arquivo em seu computador:</p>
+                <p><input type="file" accept="image/*" name="image" id="file" onchange="adicionandoImagem(event)">
+                </p>
+
+                <!-- imagens pre-carregadas -->
+                <div><br>
+                    <p>Ou utilize imagens prontas para serem estilizadas:</p>
+                    <img src="imagem1.jpeg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem2.jpg_large" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem3.jpg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem4.jpeg" class="imgcarregadas" width=99 height=99>
+                    <img src="imagem5.jpg" class="imgcarregadas" width=99 height=99>
+                </div><br><Br>
+
+                <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
+                <input type="text" id="textocima" maxlength="60"><br>
+
+                <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
+                <input type="text" id="textobaixo" maxlength="60"><br>
+
+                <span class="inputtexto">Selecione o tamanho da fonte:</span>
+                <select id="tamanho" class="options">
+                    <option value="20px">20px</option>
+                    <option value="24px">24px</option>
+                    <option value="28px">28px</option>
+                    <option value="32px">32px</option>
+                    <option value="36px">36px</option>
+                </select><br>
+
+                <span class="inputtexto">Selecione a borda da imagem:</span>
+                <select id="borda" class="options">
+                    <option value="5px">Borda tradicional</option>
+                    <option value="2px">Borda fina</option>
+                    <option value="15px">Borda grossa</option>
+                </select><br>
+
+                <span class="inputtexto">Selecione a cor da fonte:</span>
+                <select id="color" class="options">
+                    <option value="black">Preto</option>
+                    <option value="white">Branco</option>
+                    <option value="red">Vermelho</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                </select><br>
+
+                <input type="button" class="botaodown" onclick="printDiv('editcontainer')"
+                    value="CLIQUE AQUI PARA BAIXAR SEU MEME!" />
+            </div><br>
+
+            <!-- resultado img + texto -->
+            <div class="editcontainer" id="editcontainer">
+                <img id="output" class="imgdisplay" />
+                <p id="textofinalcima" class="fonteimg"></p>
+                <p id="textofinalbaixo" class="fonteimg"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="jsindex.js"></script>
+
+</body>
+
+</html>
