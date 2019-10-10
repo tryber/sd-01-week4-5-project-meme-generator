@@ -4,7 +4,7 @@ body{
     background-image: url();
 }
 
-#colocar-imagem {
+#local-da-imagem-inserida {
     border: 2px solid rgb(0, 0, 0);
     width: 43%;
     height: 500px;
@@ -14,9 +14,9 @@ body{
     line-break: normal;
 }
 
-#mensagem-meme{
+#mensagem-parte-superior-da-foto-meme{
     font-size: 10mm;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, sans-serif;
     position: absolute;
     width: 41%;
     top:300px;
@@ -24,9 +24,9 @@ body{
     color: yellow;
 }
 
-#mensagem-meme2{
+#mensagem-parte-inferior-da-foto-meme{
     font-size: 10mm;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, sans-serif;
     position: absolute;
     width: 41%;
     top: 700px;
