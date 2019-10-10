@@ -1,6 +1,6 @@
 Projeto I - Gerador de Memes em Javascript.
 -por Mateus Talles
-Link para GitHubPages: https://mateustalles.github.io/projetos/meme-generator/mateustalles/
+Link para GitHubPages: https://mateustalles.github.io/projetos/meme-generator/
 
 Instruções a seguir:
 

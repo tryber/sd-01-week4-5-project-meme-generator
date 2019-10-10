@@ -20,7 +20,7 @@ div {
     font-weight: 800;
 }
 
-.button-font {
+.btn-font-increase,.btn-font-decrease {
     position: relative;
     margin-left: 50%;
     transform: translate(-50%);
@@ -52,13 +52,13 @@ div {
     padding: 0px;
     text-align: center;
     font-size:50px;
-    border: 8px solid black;
     resize: both;
     overflow: hidden;
 }
 
 .image-meme {   
     width: 100%;
+    border: 8px solid black;
 }
 
 .text {
@@ -71,17 +71,19 @@ div {
     -webkit-text-stroke: 2px black;
     word-break:break-all;
     white-space:normal;
-    width: 100%;
-    text-align: center;
-    left: 0%;
 }
-
 .text.up{
     top: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
 }
 
 .text.down {
     bottom: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
 }
 
 .borders {
@@ -96,14 +98,15 @@ div {
     height: 15px;
     margin: 3px 1px;
 }
-.border-white {border: 1px solid white}
-
-.black{ background-color: black; }
+.black{ background-color: black; border: 1px solid white;}
 .blue {background-color: blue;}
 .green {background-color: #0FA36B;}
 .gold {background-color: goldenrod;}
 .red {background-color: red}
 
+.border-width {
+    border-width: 8px;
+}
 
 .miniatures {
     position: absolute;
