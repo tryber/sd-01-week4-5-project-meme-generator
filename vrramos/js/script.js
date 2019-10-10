@@ -7,12 +7,11 @@ function inserirImagem() {
 }
 
 function carregarImagem(event) {
-    let img = document.querySelector('.imagem-inserida');
-    img.src = URL.createObjectURL(event.target.files[0]);
-};
+    let img = document.querySelector('.imagem-inserida')
+    img.src = URL.createObjectURL(event.target.files[0])
+}
 
 function writeText(){
-    let textoInput = document.querySelector('#valor-input').value
     let textoOutput = document.querySelector('#valor-saida')
-    textoOutput.textContent = textoInput;
+    textoOutput.textContent = document.querySelector('#valor-input').value
 }   
