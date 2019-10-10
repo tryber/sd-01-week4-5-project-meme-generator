@@ -59,8 +59,10 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 3em; color: #fffdd9;
 
 }
