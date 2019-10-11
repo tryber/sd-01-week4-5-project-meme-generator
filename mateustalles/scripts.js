@@ -13,19 +13,19 @@ function insertText(id) {
 };
 
 insertText("meme-text1");
-insertText("meme-text2")
+insertText("meme-text2");
 
 let memeTexts = document.querySelectorAll("[class^='text ']");
 document.querySelector(".btn-font-increase").addEventListener("click", function () {
     for (text of memeTexts) {
         text.style.fontSize = parseInt(getComputedStyle(text).fontSize) + 3 + "px";
-    }
-})
+    };
+});
 
 document.querySelector(".btn-font-decrease").addEventListener("click", function () {
     for (text of memeTexts) {
         text.style.fontSize = parseInt(getComputedStyle(text).fontSize) - 3 + "px";
-    }
+    };
 });
 
 let btnBorders = document.querySelectorAll(".btn-borders");
@@ -34,22 +34,20 @@ for (let border of btnBorders) {
         let imgContainer = document.querySelector(".image-meme");
         imgContainer.style.borderStyle = border.id;
     });
-}
+};
 
 let corBordas = document.querySelectorAll(".border-colors");
 for (let color of corBordas) {
     color.addEventListener("click", function () {
         let imgContainer = document.querySelector(".image-meme");
         imgContainer.style.borderColor = getComputedStyle(color).backgroundColor;
-    })
-}
-
-//Atribui imagem das miniaturas à moldura
+    });
+};
 
 let miniatures = document.querySelectorAll(".img-small");
 for (let miniature of miniatures) {
     miniature.addEventListener("click", function () {
         let imgMeme = document.querySelector(".image-meme");
         imgMeme.src = miniature.src;
-    })
-}
+    });
+};
