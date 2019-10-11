@@ -17,13 +17,13 @@ insertText("meme-text2");
 
 let memeTexts = document.querySelectorAll("[class^='text ']");
 document.querySelector(".btn-font-increase").addEventListener("click", function () {
-    for (text of memeTexts) {
+    for (let text of memeTexts) {
         text.style.fontSize = parseInt(getComputedStyle(text).fontSize) + 3 + "px";
     };
 });
 
 document.querySelector(".btn-font-decrease").addEventListener("click", function () {
-    for (text of memeTexts) {
+    for (let text of memeTexts) {
         text.style.fontSize = parseInt(getComputedStyle(text).fontSize) - 3 + "px";
     };
 });
