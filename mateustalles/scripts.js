@@ -1,14 +1,14 @@
 const img = document.querySelector(".image-meme");
 const inputImg = document.querySelector(".image-upload");
-inputImg.addEventListener("change", function () {
+inputImg.addEventListener("change", function() {   
     img.src = URL.createObjectURL(this.files[0]);
 });
 
 function insertText(id) {
     let textMeme = document.getElementById(id);
-    textMeme.addEventListener("keyup", function () {
-        let idRef = (id.slice(-1)) - 1;
-        document.querySelectorAll("[class^='text ']")[idRef].innerText = textMeme.value;
+    textMeme.addEventListener("keyup", function() {
+        let idRef = (id.slice(-1))-1;
+        document.querySelectorAll("[class^='text ']")[idRef].innerText=textMeme.value;
     })
 };
 
@@ -16,23 +16,23 @@ insertText("meme-text1");
 insertText("meme-text2");
 
 let memeTexts = document.querySelectorAll("[class^='text ']");
-document.querySelector(".btn-font-increase").addEventListener("click", function () {
+document.querySelector(".btn-font-increase").addEventListener("click", function() {
     for (let text of memeTexts) {
-        text.style.fontSize = parseInt(getComputedStyle(text).fontSize) + 3 + "px";
+        text.style.fontSize=parseInt(getComputedStyle(text).fontSize) + 3 + "px";
     };
 });
-
-document.querySelector(".btn-font-decrease").addEventListener("click", function () {
+document.querySelector(".btn-font-decrease").addEventListener("click", function() {
     for (let text of memeTexts) {
-        text.style.fontSize = parseInt(getComputedStyle(text).fontSize) - 3 + "px";
+        text.style.fontSize=parseInt(getComputedStyle(text).fontSize) - 3 + "px";
     };
 });
 
 let btnBorders = document.querySelectorAll(".btn-borders");
 for (let border of btnBorders) {
-    border.addEventListener("click", function () {
+    console.log(border.id)
+    border.addEventListener ("click", function(){
         let imgContainer = document.querySelector(".image-meme");
-        imgContainer.style.borderStyle = border.id;
+        imgContainer.style.borderStyle=border.id;
     });
 };
 
@@ -46,8 +46,8 @@ for (let color of corBordas) {
 
 let miniatures = document.querySelectorAll(".img-small");
 for (let miniature of miniatures) {
-    miniature.addEventListener("click", function () {
+    miniature.addEventListener("click", function() {
         let imgMeme = document.querySelector(".image-meme");
-        imgMeme.src = miniature.src;
+        imgMeme.src=miniature.src;
     });
 };

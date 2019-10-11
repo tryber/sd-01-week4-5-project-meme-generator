@@ -98,11 +98,13 @@ div {
     height: 15px;
     margin: 3px 1px;
 }
-.black{ background-color: black; border: 1px solid white;}
+.black{ background-color: black; }
 .blue {background-color: blue;}
 .green {background-color: #0FA36B;}
 .gold {background-color: goldenrod;}
 .red {background-color: red}
+
+.border-outline {outline: 1px solid white;}
 
 .border-width {
     border-width: 8px;
