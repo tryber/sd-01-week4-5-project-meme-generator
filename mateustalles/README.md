@@ -4,7 +4,7 @@ Link para GitHubPages: https://mateustalles.github.io/projetos/meme-generator/
 
 Instruções a seguir:
 
-  1 -  Escolha uma imagem do seu PC ou da galera ao lado;
+  1 -  Escolha uma imagem do seu PC ou da galeria ao lado;
   2 -  Insira suas frases-meme na parte superior e/ou inferior do projeto;
   3 -  Opcionalmente, você também pode alterar o tamanho do meme clicando e arrastando o canto inferior direito do meme.
   4 -  Você também pode alterar as cores e os tipos das bordas, além do tamanho da fonte.
