@@ -9,11 +9,14 @@ function insertText(id) {
     textMeme.addEventListener("keyup", function() {
         let idRef = (id.slice(-1))-1;
         document.querySelectorAll("[class^='text ']")[idRef].innerText=textMeme.value;
-    })
+    });
 };
 
-insertText("meme-text1");
-insertText("meme-text2");
+function insertMemeText() {
+    insertText("meme-text1");
+    insertText("meme-text2");
+};
+insertMemeText();
 
 let memeTexts = document.querySelectorAll("[class^='text ']");
 document.querySelector(".btn-font-increase").addEventListener("click", function() {
