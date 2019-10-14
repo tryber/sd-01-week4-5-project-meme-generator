@@ -77,7 +77,7 @@ body{
     position: absolute;
     padding-left: 75.6%;
 }
-.box{
+#box{
     width: 614px;
     height: 614px;
     border: 11px solid #BB3ABD;
@@ -310,5 +310,7 @@ p {
 .forms ul li{
     display: inline;
 }
-
+#score{
+    padding-top: 10%;
+}
   

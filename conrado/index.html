@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
-
 <body>
-    <header class="header">
+    <header>
         <img id="headerbg" src="image/Vector.svg" alt="background degradê">
         <img id="headerbg2" src="image/bg-interno.svg" alt="background com opacidade">
     </header>
@@ -26,21 +26,22 @@
         <label id="filelabel" for="myFile">Upload</label>
         <input type="file" name="image" accept='image/*' onchange="loadFile(event)" id="myFile" />
     </div>
-    <div class="box">
+    <canvas id="box">
+        Canvas requires a browser that supports HTML5.
         <img src="" class="imgoutput" alt="meme">
         <div class="breaktext">
             <p id="texttop"></p>
             <p id="textbottom"></p>
         </div>
-    </div>
+    </canvas>
     <button class="btndonwload">Donwload</button>
-    <div class="inputs">
+    <div>
         <div class="textinput1">
             <label>Text 1</label>
             <input type="text" maxlength="70" placeholder="Remember, be nice!" id="memetop"
                 onkeyup="showTextTop(event)" />
         </div>
-        <div class="btncontrolertext1">
+        <div>
             <button id="btnmaistext1">+</button>
             <button id="btnmenostext1">-</button>
         </div>
@@ -49,7 +50,7 @@
             <input type="text" maxlength="70" placeholder="Remember, be nice!" id="memebottom"
                 onkeyup="showTextBottom(event)" />
         </div>
-        <div class="btncontrolertext2">
+        <div>
             <button id="btnmaistext2">+</button>
             <button id="btnmenostext2">-</button>
         </div>
@@ -72,7 +73,6 @@
             </li>
         </ul>
     </div>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
