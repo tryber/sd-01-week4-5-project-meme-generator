@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>Gerador de Memes =D </title>
-</head>
-<body>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Gerador de Memes =D </title>
+    </head>
+    <body>
         <div class="divtitle">
-        <span class="title1">Gerador de memes - O melhor da Internet</span><br>
-        <p>Selecione uma imagem:  <input type="file" name="image" id="diretorio" onchange="loadFile(event)" /></p>
-        <p>Texto Superior: <input type="text" maxlength="70" id="chartextmemetop" placeholder = "Mandavê!" onkeyup="showTextTop(event)"/></p>
-        <p>Texto Inferior: <input type="text" maxlength="70" id="chartextmemebottom" placeholder = "Mandavê!" onkeyup="showTextBottom(event)"/></p>
+            <span class="title1">Gerador de memes - O melhor da Internet</span><br>
+            <p>Selecione uma imagem:  <input type="file" name="image" id="diretorio" onchange="loadFile(event)" /></p>
+            <p>Texto Superior: <input type="text" maxlength="70" id="chartextmemetop" placeholder = "Mandavê!" onkeyup="showTextTop(event)"/></p>
+            <p>Texto Inferior: <input type="text" maxlength="70" id="chartextmemebottom" placeholder = "Mandavê!" onkeyup="showTextBottom(event)"/></p>
         </div>
-            
         <div class="box">
             <img src="" class="imgoutput" alt="Imagem do meme">
             <div class="breaktext">
@@ -24,6 +23,5 @@
             <p id="memetextbottom"></p>
             </div>
         </div>
-
-</body>
+    </body>
 </html>
