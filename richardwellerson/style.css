@@ -54,7 +54,7 @@ p {
     height: 500px;
     position: absolute;
 }
-.box p { /* Busca apenas as tags dentro da div */
+.box p {
     position: absolute;
     text-transform: uppercase;
     font-weight: bold;
