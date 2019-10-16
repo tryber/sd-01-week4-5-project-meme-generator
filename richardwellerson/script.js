@@ -13,5 +13,4 @@ function showTextBottom(event) {
     let text2 = document.getElementById('chartextmemebottom').value;
     let showText2 = document.getElementById('memetextbottom');
     showText2.innerHTML = text2;
-    
 }   
