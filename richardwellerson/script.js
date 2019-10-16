@@ -1,7 +1,7 @@
 function loadFile(event) {
     let image = document.getElementsByClassName('imgoutput')[0];
     image.src = URL.createObjectURL(event.target.files[0]);
-};
+}
 
 function showTextTop(event) {
     let text1 = document.getElementById('chartextmemetop').value;
